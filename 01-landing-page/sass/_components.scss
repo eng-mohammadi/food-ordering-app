@@ -1,0 +1,89 @@
+@mixin flex-row__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row__flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-row__stretch {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@mixin flex-row__space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-row__space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-row__space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin flex-column__center {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column__space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin display-inline__block {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+}
+
+@mixin display-inline__flex {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin display-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+@mixin display-grid__column {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+@mixin display-grid__column-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
