@@ -1,0 +1,5 @@
+.vscode/
+*.css.map
+Thumbs.db
+.DS_Store
+node_modules/
