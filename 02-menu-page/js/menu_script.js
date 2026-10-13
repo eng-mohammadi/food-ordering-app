@@ -36,7 +36,7 @@ const jsonFoodData = `{
                   "product_id":1,
                   "product_name": "ژامبون مرغ تنوری",
                   "product_price": 165000,
-                  "product_image": "images/food_images/jhamboon_tanoori.jpg",
+                  "product_image": "images/food_images/jhamboon-tanoori.jpg",
                   "product_content": [
                       "ژامبون مرغ",
                       "قارچ",
@@ -92,7 +92,7 @@ const jsonFoodData = `{
               "product_id":5,                
               "product_name": "پیتزا فیله مرغ",
               "product_price": 165000,
-              "product_image": "images/food_images/chicken pizza.jpg",
+              "product_image": "images/food_images/chicken-pizza.jpg",
               "product_content": [
                   "فیله مرغ",
                   "قارچ",
@@ -134,7 +134,7 @@ const jsonFoodData = `{
               "product_id":8,                
               "product_name": "کوبیده",
               "product_price": 110000,
-              "product_image": "images/food_images/Shredded kebab.png",
+              "product_image": "images/food_images/shredded-kebab.png",
               "product_content": [
                   "گوشت چرخ کرده",
                   "پیاز",
@@ -144,8 +144,8 @@ const jsonFoodData = `{
           }, {
               "product_id":9,                
               "product_name": "برگ",
-              "product_price": 175,
-              "product_image": "images/food_images/Leaf kebab.jpg",
+              "product_price": 175000,
+              "product_image": "images/food_images/leaf-kebab.jpg",
               "product_content": [
                   "گوشت گوسفندی",
                   "نمک",
