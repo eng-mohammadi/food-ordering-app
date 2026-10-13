@@ -1,0 +1,182 @@
+@import "_generals";
+@import "_components";
+@import "_layouts";
+
+// Header
+.main-section {
+  width: 100%;
+  .left-section__container {
+    .list-links__right {
+      @include display-inline__block;
+      .list-links__items {
+        .horizontal-list {
+          .horizontal-list__right {
+            i {
+              @include display-inline__flex;
+              border: 5px solid $border-color;
+              border-radius: 50%;
+              background-color: $black-color;
+              color: $white-color;
+            }
+          }
+          .horizontal-list__left {
+            a {
+              @include display-inline__block;
+              color: $black-color;
+              &:hover {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+    .list-links__left {
+      .list-links {
+        .list-item {
+          i {
+            @include display-inline__flex;
+            border: 2px solid $border-color;
+            border-radius: 5px;
+            background-color: $border-color;
+            color: $white-color;
+            &:hover {
+              background-color: invert($border-color);
+              color: $blue-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Header
+
+// navbar Menu
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  .navbar-menu {
+    width: 90%;
+    border: 1px solid $navbar-menu__color;
+    background-color: $navbar-menu__color;
+    position: relative;
+    .navbar-menu__right {
+      .navbar-menu__right-items {
+        li {
+          @include display-inline__block;
+          #link {
+            padding: 5px;
+            border: 1px solid $navbar-menu__color;
+            background-color: hsla(0, 0%, 100%, 0.3);
+          }
+          a {
+            color: $white-color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .navbar-menu__left {
+      a {
+        text-decoration: none;
+        color: $black-color;
+        &:hover {
+          color: $white-color;
+        }
+        span {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+// End navbar Menu
+
+// Banner
+.banner {
+  width: 100%;
+  position: relative;
+  background-image: url("../images/food_images/home-slide-3-1920x800.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .banner-container {
+    @include flex-column__center;
+    width: 65%;
+    margin: 10px auto;
+    text-align: center;
+    h3 {
+      color: $white-color;
+      margin-top: 100px;
+    }
+    h1 {
+      margin-top: 0;
+      color: $white-color;
+      line-height: 1;
+    }
+    p {
+      color: $white-color;
+    }
+    a {
+      text-decoration: none;
+      border: 1px solid $border-color;
+      color: $white-color;
+      background-color: $background-button__color;
+      &:hover {
+        background-color: invert($background-button__color);
+      }
+    }
+  }
+}
+// End Banner
+
+// Main Body
+.main-body {
+  width: 100%;
+  .main-body__title {
+    width: 50%;
+    text-align: center;
+    h2 {
+      margin: 0;
+    }
+    p {
+      color: $gray-color;
+    }
+  }
+  .image-main__body-section {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url("../images/food_images/home-slide-4-1920x800.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    .image-title {
+      h3 {
+        color: $white-color;
+      }
+    }
+    .food-menu {
+      width: 100%;
+      .food-menu__gird-section {
+        margin: 0 auto;
+        .grid-box {
+          @include flex-column__space-between;
+          border-radius: 10px;
+          background-color: $white-color;
+          .grid-box__title {
+            text-align: right;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+          a {
+            text-decoration: none;
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+}
+// End Main Body

@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "aviny-700";
+  src: url("../fonts/farsi_fonts/aviny-700.eot"),
+    url("../fonts/farsi_fonts/aviny-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/farsi_fonts/aviny-700.ttf") format("truetype"),
+    url("../fonts/farsi_fonts/aviny-700.woff") format("woff"),
+    url("../fonts/farsi_fonts/aviny-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "azarmehr-700";
+  src: url("../fonts/farsi_fonts/azarmehr-700.eot"),
+    url("../fonts/farsi_fonts/azarmehr-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/farsi_fonts/azarmehr-700.ttf") format("truetype"),
+    url("../fonts/farsi_fonts/azarmehr-700.woff") format("woff"),
+    url("../fonts/farsi_fonts/azarmehr-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "palatino-sans-700";
+  src: url("../fonts/farsi_fonts/palatino-sans-700.eot"),
+    url("../fonts/farsi_fonts/palatino-sans-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/farsi_fonts/palatino-sans-700.ttf") format("truetype"),
+    url("../fonts/farsi_fonts/palatino-sans-700.woff") format("woff"),
+    url("../fonts/farsi_fonts/palatino-sans-700.woff2") format("woff2");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "azarmehr-300";
+  src: url("../fonts/farsi_fonts/azarmehr-300.eot"),
+    url("../fonts/farsi_fonts/azarmehr-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/farsi_fonts/azarmehr-300.ttf") format("truetype"),
+    url("../fonts/farsi_fonts/azarmehr-300.woff") format("woff"),
+    url("../fonts/farsi_fonts/azarmehr-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "estedad-300";
+  src: url("../fonts/farsi_fonts/estedad-300.eot"),
+    url("../fonts/farsi_fonts/estedad-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/farsi_fonts/estedad-300.ttf") format("truetype"),
+    url("../fonts/farsi_fonts/estedad-300.woff") format("woff"),
+    url("../fonts/farsi_fonts/estedad-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+$white-color: #fff;
+$black-color: #000;
+$navbar-menu__color: #f16121;
+$body-bg-color: #fbfbfb;
+$border-color: #ccc;
+$gray-color: #a09595;
+$blue-color: #5eb0f4;
+$background-button__color: #199b0b;
+$background-green__color: rgb(91, 218, 45);
