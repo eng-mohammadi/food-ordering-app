@@ -1,0 +1,273 @@
+@import "_generals";
+@import "_components";
+@import "_detailslayouts";
+
+// Header
+.main-section {
+  width: 100%;
+  .left-section__container {
+    .list-links__right {
+      @include display-inline__block;
+      .list-links__items {
+        .horizontal-list {
+          .horizontal-list__right {
+            i {
+              @include display-inline__flex;
+              border: 5px solid $border-color;
+              border-radius: 50%;
+              background-color: $black-color;
+              color: $white-color;
+            }
+          }
+          .horizontal-list__left {
+            a {
+              @include display-inline__block;
+              color: $black-color;
+              &:hover {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+    .list-links__left {
+      .list-links {
+        .list-item {
+          i {
+            @include display-inline__flex;
+            border: 2px solid $border-color;
+            border-radius: 5px;
+            background-color: $border-color;
+            color: $white-color;
+            &:hover {
+              background-color: invert($border-color);
+              color: $blue-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Header
+
+// navbar Menu
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  .navbar-menu {
+    width: 90%;
+    border: 1px solid $navbar-menu__color;
+    background-color: $navbar-menu__color;
+    position: relative;
+    .navbar-menu__right {
+      .navbar-menu__right-items {
+        li {
+          @include display-inline__block;
+          #link {
+            padding: 5px;
+            border: 1px solid $navbar-menu__color;
+            background-color: hsla(0, 0%, 100%, 0.3);
+          }
+          a {
+            color: $white-color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .navbar-menu__left {
+      a {
+        text-decoration: none;
+        color: $black-color;
+        &:hover {
+          color: $white-color;
+        }
+        span {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+// End navbar Menu
+
+// Banner
+.banner {
+  width: 100%;
+  height: 275px;
+  position: relative;
+  background-image: url("../images/food_images/home-slide-3-1920x800.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .banner-container {
+    @include flex-column__center;
+    width: 65%;
+    margin: 10px auto;
+    text-align: center;
+    .banner-title {
+      margin-top: 50px;
+      color: $white-color;
+    }
+    .banner-list {
+      li {
+        @include display-inline__block;
+        a {
+          @include display-inline__block;
+          color: $white-color;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+// End Banner
+
+// Main Body
+.details-section {
+  width: 100%;
+  .food-info__container {
+    width: 100%;
+    .product-detail-gallery {
+      .large-image {
+        white-space: nowrap;
+        overflow: hidden;
+        img {
+          border-radius: 15px;
+          margin: 10px;
+        }
+      }
+      .small-image {
+        width: 100%;
+        img {
+          border-radius: 15px;
+          margin: 10px;
+          box-shadow: 7px 7px 7px #000;
+        }
+      }
+    }
+    .product-detail-info {
+      .title {
+        @include flex-row__flex-start;
+        width: 100%;
+        .badge {
+          background-color: $navbar-menu__color;
+          color: $white-color;
+        }
+      }
+      .food-details__content {
+        color: $gray-color;
+      }
+      .line-style {
+        width: 75%;
+        display: inline-block;
+        border: 1px solid $gray-color;
+      }
+      .details {
+        @include flex-row__flex-start;
+        .price {
+          .price-list {
+            @include display-inline__block;
+            .li-price__list {
+              color: $navbar-menu__color;
+            }
+          }
+        }
+        .product-type {
+          @include flex-column__center;
+          .span-product__type {
+            margin: 5px;
+            border: 1px solid orange;
+            border-radius: 50%;
+            background-color: orange;
+            color: $white-color;
+          }
+        }
+      }
+      .product-energy {
+        .product-energy__title {
+          color: $gray-color;
+          margin: 0;
+        }
+        .product-energy__value {
+          @include flex-row__space-between;
+          height: 30px;
+          border: 1px solid #000;
+          border-radius: 25px;
+          text-align: left;
+          .fill-product__energy-value {
+            height: 100%;
+            background-color: orange;
+            border-radius: 25px;
+            padding: 5px;
+            text-align: right;
+            color: $white-color;
+          }
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+      .product-protein {
+        .product-protein__title {
+          color: $gray-color;
+          margin: 0;
+        }
+        .product-protein__value {
+          @include flex-row__space-between;
+          height: 30px;
+          border: 1px solid #000;
+          border-radius: 25px;
+          text-align: left;
+          .fill-product__protein-value {
+            height: 100%;
+            background-color: orange;
+            border-radius: 25px;
+            padding: 5px;
+            text-align: right;
+            color: $white-color;
+          }
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+      .shop-card {
+        @include flex-row__flex-start;
+        margin-top: 25px;
+        .sale {
+          border-radius: 25px;
+          border: 1px solid $gray-color;
+          text-align: center;
+          @include flex-row__space-between;
+          cursor: pointer;
+          .add-product {
+            text-align: center;
+            border: none;
+            background-color: transparent;
+          }
+        }
+        .shop {
+          .shop-button {
+            width: 100%;
+            padding: 5px;
+            border-radius: 25px;
+            background-color: $navbar-menu__color;
+            color: $white-color;
+            border: none;
+            cursor: pointer;
+            &:hover {
+              background-color: invert($navbar-menu__color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Main Body
