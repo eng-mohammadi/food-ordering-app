@@ -1,0 +1,174 @@
+@import "_generals";
+@import "_components";
+@import "_menulayouts";
+
+// Header
+.main-section {
+  width: 100%;
+  .left-section__container {
+    .list-links__right {
+      @include display-inline__block;
+      .list-links__items {
+        .horizontal-list {
+          .horizontal-list__right {
+            i {
+              @include display-inline__flex;
+              border: 5px solid $border-color;
+              border-radius: 50%;
+              background-color: $black-color;
+              color: $white-color;
+            }
+          }
+          .horizontal-list__left {
+            a {
+              @include display-inline__block;
+              color: $black-color;
+              &:hover {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+    .list-links__left {
+      .list-links {
+        .list-item {
+          i {
+            @include display-inline__flex;
+            border: 2px solid $border-color;
+            border-radius: 5px;
+            background-color: $border-color;
+            color: $white-color;
+            &:hover {
+              background-color: invert($border-color);
+              color: $blue-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Header
+
+// navbar Menu
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  .navbar-menu {
+    width: 90%;
+    border: 1px solid $navbar-menu__color;
+    background-color: $navbar-menu__color;
+    position: relative;
+    .navbar-menu__right {
+      .navbar-menu__right-items {
+        li {
+          @include display-inline__block;
+          #link {
+            padding: 5px;
+            border: 1px solid $navbar-menu__color;
+            background-color: hsla(0, 0%, 100%, 0.3);
+          }
+          a {
+            color: $white-color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .navbar-menu__left {
+      a {
+        text-decoration: none;
+        color: $black-color;
+        &:hover {
+          color: $white-color;
+        }
+        span {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+// End navbar Menu
+
+// Banner
+.banner {
+  width: 100%;
+  height: 275px;
+  position: relative;
+  background-image: url("../images/food_images/home-slide-3-1920x800.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .banner-container {
+    @include flex-column__center;
+    width: 65%;
+    margin: 10px auto;
+    text-align: center;
+    .banner-title {
+      margin-top: 50px;
+      color: $white-color;
+    }
+    .banner-list {
+      li {
+        @include display-inline__block;
+        a {
+          @include display-inline__block;
+          color: $white-color;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+// End Banner
+
+// Main Body
+.main-body {
+  width: 100%;
+  .background-menu {
+    width: 80%;
+    height: 530px;
+    margin: 0 auto;
+    background-image: url("../images/food_images/bg-menu-7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 10px;
+    .ul-list {
+      @include display-inline__block;
+      width: 520px;
+      border: 3px solid $white-color;
+      box-shadow: 5px 5px 5px $body-bg-color;
+      border-radius: 10px;
+      margin: 30px;
+      padding: 15px;
+      .li-list {
+        font-family: "palatino-sans-700";
+        color: $white-color;
+        .food-title-and-price {
+          @include flex-row__space-between;
+          .food-title,
+          .food-price {
+            font-size: 1.2rem;
+          }
+          .food-title {
+            text-decoration: none;
+            color: $blue-color;
+          }
+        }
+        .food-content {
+          .food-content__title {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+// End Main Body

@@ -1,0 +1,1652 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+  background-color: $body-bg-color;
+}
+
+@media only screen and (max-width: 320px) {
+  // Header
+  .main-section {
+    @include flex-row__space-around;
+    .right-section__container {
+      img {
+        width: 60px;
+        height: 49px;
+      }
+    }
+    .left-section__container {
+      @include flex-row__center;
+      .list-links__right {
+        .list-links__items {
+          .horizontal-list {
+            @include flex-row__flex-start;
+            .horizontal-list__right {
+              i {
+                width: 25px;
+                height: 25px;
+                font-size: map-get($font-size-small, 1);
+                margin-left: 3px;
+              }
+            }
+            .horizontal-list__left {
+              a {
+                font-family: "azarmehr-300";
+                font-size: map-get($font-size-small, 1);
+              }
+            }
+          }
+        }
+      }
+      .list-links__left {
+        @include flex-column__center;
+        .list-links {
+          @include display-inline__block;
+          .list-item {
+            i {
+              width: 25px;
+              height: 25px;
+              font-size: map-get($font-size-small, 3);
+              margin: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Header
+
+  // navbar
+  .navbar {
+    .navbar-menu {
+      width: 90%;
+      @include flex-row__space-between;
+      margin: 10px auto;
+      border-radius: 20px;
+      .navbar-menu__right {
+        .navbar-menu__right-items {
+          @include flex-row__flex-start;
+          li {
+            a {
+              font-family: "azarmehr-300";
+              margin: 0 3px;
+              font-size: map-get($font-size-small, 1);
+            }
+          }
+        }
+      }
+      .navbar-menu__left {
+        padding: 3px;
+        i,
+        span {
+          font-size: map-get($font-size-small, 3);
+          margin: 0 3px;
+        }
+      }
+    }
+  }
+  // End navbar
+
+  // Banner
+  .banner {
+    top: -43px;
+    .banner-container {
+      font-family: "estedad-300";
+      .banner-title {
+        font-size: map-get($font-size-small, 5);
+      }
+      .banner-list {
+        margin-top: 0;
+        li {
+          a {
+            font-size: map-get($font-size-small, 3);
+          }
+        }
+      }
+    }
+  }
+  // End Banner
+
+  // Main Body
+  .details-section {
+    margin-top: 10px;
+    .food-info__container {
+      @include flex-column__center;
+      .product-detail-gallery {
+        width: 75%;
+        .large-image {
+          width: 40%;
+          white-space: nowrap;
+          overflow: hidden;
+          margin: 10px auto;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+        .small-image {
+          @include flex-column__center;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      .product-detail-info {
+        width: 100%;
+        .title {
+          @include flex-column__center;
+          width: 100%;
+          .food-details__title {
+            padding: 5px;
+            h4 {
+              font-family: "azarmehr-300";
+              font-size: map-get($font-size-medium, 2);
+            }
+          }
+          .badge {
+            font-size: map-get($font-size-medium, 2);
+            font-family: "aviny-300";
+            padding: 5px;
+          }
+        }
+        .food-details__content {
+          font-family: "estedad-300";
+          font-size: map-get($font-size-small, 5);
+        }
+        .details {
+          .price {
+            .price-list {
+              .li-price__list {
+                font-family: "estedad-300";
+                span,
+                del {
+                  margin: 3px;
+                }
+                del {
+                  font-size: map-get($font-size-small, 5);
+                }
+                span {
+                  font-size: map-get($font-size-small, 5);
+                }
+              }
+            }
+          }
+          .product-type {
+            margin-top: 5px;
+            margin-right: 5px;
+            .product-type__link {
+              padding: 5px;
+              font-size: map-get($font-size-small, 5);
+            }
+          }
+        }
+        .product-energy {
+          margin-top: 5px;
+          padding: 5px;
+          .product-energy__title {
+            font-size: map-get($font-size-small, 5);
+            font-family: "estedad-300";
+          }
+          .product-energy__value {
+            width: 100%;
+            .fill-product__energy-value {
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .product-protein {
+          padding: 5px;
+          .product-protein__title {
+            font-size: map-get($font-size-medium, 1);
+            font-family: "estedad-300";
+          }
+          .product-protein__value {
+            width: 100%;
+            .fill-product__protein-value {
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .shop-card {
+          .sale {
+            width: 35%;
+            height: 30px;
+            font-size: map-get($font-size-medium, 1);
+            padding: 5px;
+            .plus {
+              margin-right: 5px;
+              font-size: map-get($font-size-medium, 1);
+            }
+            .add-product {
+              font-size: map-get($font-size-medium, 1);
+            }
+            .minus {
+              margin-left: 5px;
+              font-size: map-get($font-size-medium, 3);
+            }
+          }
+          .shop {
+            .shop-button {
+              margin-right: 20px;
+              font-family: "palatino-sans-300";
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  // Header
+  .main-section {
+    @include flex-row__center;
+    .right-section__container {
+      img {
+        width: 75px;
+        height: 49px;
+      }
+    }
+    .left-section__container {
+      @include flex-row__center;
+      .list-links__right {
+        .list-links__items {
+          .horizontal-list {
+            @include flex-row__flex-start;
+            .horizontal-list__right {
+              i {
+                width: 30px;
+                height: 30px;
+                font-size: map-get($font-size-small, 1);
+              }
+            }
+            .horizontal-list__left {
+              a {
+                font-family: "azarmehr-300";
+                font-size: map-get($font-size-small, 1);
+              }
+            }
+          }
+        }
+      }
+      .list-links__left {
+        @include flex-column__center;
+        .list-links {
+          @include display-inline__block;
+          .list-item {
+            i {
+              width: 25px;
+              height: 25px;
+              font-size: map-get($font-size-small, 1);
+              margin: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Header
+
+  // navbar
+  .navbar {
+    .navbar-menu {
+      @include flex-row__space-between;
+      margin: 15px auto;
+      border-radius: 25px;
+      .navbar-menu__right {
+        .navbar-menu__right-items {
+          @include flex-row__flex-start;
+          li {
+            a {
+              font-family: "azarmehr-300";
+              margin: 0 4px;
+              font-size: map-get($font-size-small, 1);
+            }
+          }
+        }
+      }
+      .navbar-menu__left {
+        padding: 4px;
+        i,
+        span {
+          font-size: map-get($font-size-small, 3);
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+  // End navbar
+
+  // Banner
+  .banner {
+    top: -43px;
+    .banner-container {
+      font-family: "estedad-300";
+      .banner-title {
+        font-size: map-get($font-size-small, 5);
+      }
+      .banner-list {
+        margin-top: 0;
+        li {
+          a {
+            font-size: map-get($font-size-small, 4);
+          }
+        }
+      }
+    }
+  }
+  // End Banner
+
+  // Main Body
+  .details-section {
+    margin-top: 10px;
+    .food-info__container {
+      @include flex-column__center;
+      .product-detail-gallery {
+        width: 75%;
+        .large-image {
+          width: 40%;
+          white-space: nowrap;
+          overflow: hidden;
+          margin: 10px auto;
+          img {
+            width: 120px;
+            height: auto;
+          }
+        }
+        .small-image {
+          @include flex-column__center;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      .product-detail-info {
+        width: 100%;
+        .title {
+          @include flex-column__center;
+          width: 100%;
+          .food-details__title {
+            padding: 5px;
+            h4 {
+              font-family: "azarmehr-300";
+              font-size: map-get($font-size-medium, 2);
+            }
+          }
+          .badge {
+            font-size: map-get($font-size-medium, 2);
+            font-family: "aviny-300";
+            padding: 5px;
+          }
+        }
+        .food-details__content {
+          font-family: "estedad-300";
+          font-size: map-get($font-size-small, 5);
+        }
+        .details {
+          .price {
+            .price-list {
+              .li-price__list {
+                font-family: "estedad-300";
+                span,
+                del {
+                  margin: 3px;
+                }
+                del {
+                  font-size: map-get($font-size-small, 5);
+                }
+                span {
+                  font-size: map-get($font-size-small, 5);
+                }
+              }
+            }
+          }
+          .product-type {
+            margin-top: 5px;
+            margin-right: 5px;
+            .product-type__link {
+              padding: 5px;
+              font-size: map-get($font-size-small, 5);
+            }
+          }
+        }
+        .product-energy {
+          margin-top: 5px;
+          padding: 5px;
+          .product-energy__title {
+            font-size: map-get($font-size-small, 5);
+            font-family: "estedad-300";
+          }
+          .product-energy__value {
+            width: 80%;
+            .fill-product__energy-value {
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .product-protein {
+          padding: 5px;
+          .product-protein__title {
+            font-size: map-get($font-size-medium, 1);
+            font-family: "estedad-300";
+          }
+          .product-protein__value {
+            width: 80%;
+            .fill-product__protein-value {
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .shop-card {
+          .sale {
+            width: 35%;
+            height: 30px;
+            font-size: map-get($font-size-medium, 1);
+            padding: 5px;
+            .plus {
+              margin-right: 5px;
+              font-size: map-get($font-size-medium, 1);
+            }
+            .add-product {
+              font-size: map-get($font-size-medium, 1);
+            }
+            .minus {
+              margin-left: 5px;
+              font-size: map-get($font-size-medium, 3);
+            }
+          }
+          .shop {
+            .shop-button {
+              margin-right: 20px;
+              font-family: "palatino-sans-300";
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  // Header
+  .main-section {
+    @include flex-row__center;
+    .right-section__container {
+      img {
+        width: 90px;
+        height: 49px;
+      }
+    }
+    .left-section__container {
+      @include flex-row__center;
+      .list-links__right {
+        .list-links__items {
+          .horizontal-list {
+            @include flex-row__flex-start;
+            .horizontal-list__right {
+              i {
+                width: 30px;
+                height: 30px;
+                font-size: map-get($font-size-small, 3);
+              }
+            }
+            .horizontal-list__left {
+              a {
+                font-family: "azarmehr-300";
+                font-size: map-get($font-size-small, 3);
+              }
+            }
+          }
+        }
+      }
+      .list-links__left {
+        @include flex-row__space-evenly;
+        .list-links {
+          .list-item {
+            @include display-inline__block;
+            i {
+              width: 25px;
+              height: 25px;
+              font-size: map-get($font-size-small, 4);
+              margin: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Header
+
+  // navbar
+  .navbar {
+    .navbar-menu {
+      @include flex-row__space-between;
+      margin: 15px auto;
+      border-radius: 25px;
+      .navbar-menu__right {
+        .navbar-menu__right-items {
+          @include flex-row__flex-start;
+          li {
+            a {
+              font-family: "azarmehr-300";
+              margin: 0 9px;
+              font-size: map-get($font-size-small, 3);
+            }
+          }
+        }
+      }
+      .navbar-menu__left {
+        padding: 6px;
+        i,
+        span {
+          font-size: map-get($font-size-small, 4);
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+  // End navbar
+
+  // Banner
+  .banner {
+    top: -43px;
+    .banner-container {
+      font-family: "estedad-300";
+      .banner-title {
+        font-size: map-get($font-size-small, 5);
+      }
+      .banner-list {
+        margin-top: 0;
+        li {
+          a {
+            font-size: map-get($font-size-small, 4);
+          }
+        }
+      }
+    }
+  }
+  // End Banner
+
+  // Main Body
+  .details-section {
+    margin-top: 10px;
+    .food-info__container {
+      @include flex-column__center;
+      .product-detail-gallery {
+        width: 80%;
+        .large-image {
+          @include check-width-sm();
+          @include check-width-md();
+          @include check-width-lg();
+          @include check-width-lg1();
+        }
+        .small-image {
+          @include flex-column__center;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      .product-detail-info {
+        width: 100%;
+        .title {
+          @include flex-column__center;
+          width: 100%;
+          .food-details__title {
+            padding: 5px;
+            h4 {
+              font-family: "azarmehr-300";
+              font-size: map-get($font-size-medium, 2);
+            }
+          }
+          .badge {
+            font-size: map-get($font-size-medium, 2);
+            font-family: "aviny-300";
+            padding: 5px;
+          }
+        }
+        .food-details__content {
+          font-family: "estedad-300";
+          font-size: map-get($font-size-small, 5);
+        }
+        .details {
+          .price {
+            .price-list {
+              .li-price__list {
+                font-family: "estedad-300";
+                span,
+                del {
+                  margin: 3px;
+                }
+                del {
+                  font-size: map-get($font-size-small, 5);
+                }
+                span {
+                  font-size: map-get($font-size-small, 5);
+                }
+              }
+            }
+          }
+          .product-type {
+            margin-top: 5px;
+            margin-right: 5px;
+            .product-type__link {
+              padding: 5px;
+              font-size: map-get($font-size-small, 5);
+            }
+          }
+        }
+        .product-energy {
+          margin-top: 5px;
+          padding: 5px;
+          .product-energy__title {
+            font-size: map-get($font-size-small, 5);
+            font-family: "estedad-300";
+          }
+          .product-energy__value {
+            width: 80%;
+            .fill-product__energy-value {
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .product-protein {
+          padding: 5px;
+          .product-protein__title {
+            font-size: map-get($font-size-medium, 1);
+            font-family: "estedad-300";
+          }
+          .product-protein__value {
+            width: 80%;
+            .fill-product__protein-value {
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .shop-card {
+          .sale {
+            width: 35%;
+            height: 30px;
+            font-size: map-get($font-size-medium, 1);
+            padding: 5px;
+            .plus {
+              margin-right: 5px;
+              font-size: map-get($font-size-medium, 1);
+            }
+            .add-product {
+              font-size: map-get($font-size-medium, 1);
+            }
+            .minus {
+              margin-left: 5px;
+              font-size: map-get($font-size-medium, 3);
+            }
+          }
+          .shop {
+            .shop-button {
+              margin-right: 25px;
+              font-family: "palatino-sans-300";
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 768px) and (max-width: 920px) {
+  // Header
+  .main-section {
+    @include flex-row__space-evenly;
+    .right-section__container {
+      img {
+        width: 150px;
+        height: 49px;
+      }
+    }
+    .left-section__container {
+      @include flex-row__center;
+      .list-links__right {
+        .list-links__items {
+          .horizontal-list {
+            @include flex-row__flex-start;
+            .horizontal-list__right {
+              i {
+                width: 30px;
+                height: 30px;
+                font-size: map-get($font-size-small, 5);
+              }
+            }
+            .horizontal-list__left {
+              a {
+                font-family: "azarmehr-300";
+                font-size: map-get($font-size-small, 5);
+              }
+            }
+          }
+        }
+      }
+      .list-links__left {
+        @include flex-row__space-evenly;
+        .list-links {
+          .list-item {
+            @include display-inline__block;
+            i {
+              width: 30px;
+              height: 30px;
+              font-size: map-get($font-size-medium, 1);
+              margin: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Header
+
+  // navbar
+  .navbar {
+    .navbar-menu {
+      @include flex-row__space-between;
+      margin: 15px auto;
+      border-radius: 25px;
+      .navbar-menu__right {
+        .navbar-menu__right-items {
+          @include flex-row__flex-start;
+          li {
+            a {
+              font-family: "azarmehr-300";
+              margin: 0 9px;
+              font-size: map-get($font-size-small, 5);
+            }
+          }
+        }
+      }
+      .navbar-menu__left {
+        padding: 6px;
+        i,
+        span {
+          font-size: map-get($font-size-medium, 1);
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+  // End navbar
+
+  // Banner
+  .banner {
+    top: -43px;
+    .banner-container {
+      font-family: "estedad-300";
+      .banner-title {
+        font-size: map-get($font-size-small, 5);
+      }
+      .banner-list {
+        margin-top: 0;
+        li {
+          a {
+            font-size: map-get($font-size-small, 4);
+          }
+        }
+      }
+    }
+  }
+  // End Banner
+
+  // Main Body
+  .details-section {
+    margin-top: 10px;
+    .food-info__container {
+      @include flex-column__center;
+      .product-detail-gallery {
+        width: 80%;
+        .large-image {
+          width: 49%;
+          white-space: nowrap;
+          overflow: hidden;
+          margin: 10px auto;
+          img {
+            width: 330px;
+            height: auto;
+            background-size: cover;
+          }
+        }
+        .small-image {
+          @include flex-column__center;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      .product-detail-info {
+        width: 100%;
+        .title {
+          @include flex-row__center;
+          width: 100%;
+          .food-details__title {
+            padding: 5px;
+            h4 {
+              font-family: "azarmehr-700";
+              font-size: map-get($font-size-medium, 3);
+            }
+          }
+          .badge {
+            font-size: map-get($font-size-medium, 3);
+            font-family: "aviny-700";
+            padding: 5px;
+          }
+        }
+        .food-details__content {
+          font-family: "estedad-700";
+          font-size: map-get($font-size-small, 5);
+          margin-top: 0;
+        }
+        .details {
+          .price {
+            .price-list {
+              .li-price__list {
+                font-family: "estedad-700";
+                span,
+                del {
+                  margin: 3px;
+                }
+                del {
+                  font-size: map-get($font-size-medium, 1);
+                }
+                span {
+                  font-size: map-get($font-size-medium, 1);
+                }
+              }
+            }
+          }
+          .product-type {
+            margin-top: 5px;
+            margin-right: 5px;
+            .product-type__link {
+              padding: 5px;
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .product-energy {
+          margin-top: 5px;
+          padding: 5px;
+          .product-energy__title {
+            font-size: map-get($font-size-medium, 1);
+            font-family: "estedad-700";
+          }
+          .product-energy__value {
+            width: 80%;
+            .fill-product__energy-value {
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .product-protein {
+          padding: 5px;
+          .product-protein__title {
+            font-size: map-get($font-size-medium, 1);
+            font-family: "estedad-700";
+          }
+          .product-protein__value {
+            width: 80%;
+            .fill-product__protein-value {
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .shop-card {
+          .sale {
+            width: 20%;
+            height: 30px;
+            font-size: map-get($font-size-medium, 1);
+            padding: 5px;
+            .plus {
+              margin-right: 5px;
+              font-size: map-get($font-size-medium, 1);
+            }
+            .add-product {
+              font-size: map-get($font-size-medium, 1);
+            }
+            .minus {
+              margin-left: 5px;
+              font-size: map-get($font-size-medium, 3);
+            }
+          }
+          .shop {
+            .shop-button {
+              margin-right: 35px;
+              font-family: "palatino-sans-700";
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+  // Header
+  .main-section {
+    @include flex-row__space-evenly;
+    .right-section__container {
+      img {
+        width: 200px;
+        height: 49px;
+      }
+    }
+    .left-section__container {
+      @include flex-row__space-evenly;
+      .list-links__right {
+        .list-links__items {
+          .horizontal-list {
+            @include flex-row__flex-start;
+            .horizontal-list__right {
+              i {
+                width: 30px;
+                height: 30px;
+                font-size: map-get($font-size-small, 5);
+              }
+            }
+            .horizontal-list__left {
+              a {
+                font-family: "azarmehr-300";
+                font-size: map-get($font-size-small, 5);
+              }
+            }
+          }
+        }
+      }
+      .list-links__left {
+        @include flex-row__space-evenly;
+        .list-links {
+          .list-item {
+            @include display-inline__block;
+            i {
+              width: 30px;
+              height: 30px;
+              font-size: map-get($font-size-medium, 1);
+              margin: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Header
+
+  // navbar
+  .navbar {
+    .navbar-menu {
+      @include flex-row__space-between;
+      margin: 15px auto;
+      border-radius: 25px;
+      .navbar-menu__right {
+        .navbar-menu__right-items {
+          @include flex-row__flex-start;
+          li {
+            a {
+              font-family: "azarmehr-300";
+              margin: 0 9px;
+              font-size: map-get($font-size-small, 5);
+            }
+          }
+        }
+      }
+      .navbar-menu__left {
+        padding: 6px;
+        i,
+        span {
+          font-size: map-get($font-size-medium, 1);
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+  // End navbar
+
+  // Banner
+  .banner {
+    top: -43px;
+    .banner-container {
+      font-family: "azarmehr-700";
+      .banner-title {
+        font-size: map-get($font-size-medium, 1);
+      }
+      .banner-list {
+        margin-top: 0;
+        li {
+          a {
+            font-size: map-get($font-size-small, 5);
+          }
+        }
+      }
+    }
+  }
+  // End Banner
+
+  // Main Body
+  .details-section {
+    margin-top: 20px;
+    .food-info__container {
+      @include flex-row__flex-start;
+      .product-detail-gallery {
+        width: 50%;
+        .large-image {
+          width: 62%;
+          white-space: nowrap;
+          overflow: hidden;
+          margin: 10px auto;
+          img {
+            width: 288px;
+            height: auto;
+            background-size: cover;
+          }
+        }
+        .small-image {
+          @include flex-row__center;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      .product-detail-info {
+        width: 50%;
+        .title {
+          @include flex-row__center;
+          width: 100%;
+          .food-details__title {
+            padding: 5px;
+            h4 {
+              font-family: "azarmehr-700";
+              font-size: map-get($font-size-medium, 3);
+            }
+          }
+          .badge {
+            font-size: map-get($font-size-medium, 3);
+            font-family: "aviny-700";
+            padding: 5px;
+            margin-right: 8px;
+          }
+        }
+        .food-details__content {
+          font-family: "estedad-700";
+          font-size: map-get($font-size-medium, 1);
+          margin-top: 0;
+        }
+        .details {
+          .price {
+            .price-list {
+              .li-price__list {
+                font-family: "estedad-700";
+                span,
+                del {
+                  margin: 3px;
+                }
+                del {
+                  font-size: map-get($font-size-medium, 2);
+                }
+                span {
+                  font-size: map-get($font-size-medium, 2);
+                }
+              }
+            }
+          }
+          .product-type {
+            margin-top: 5px;
+            margin-right: 5px;
+            .product-type__link {
+              padding: 5px;
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .product-energy {
+          margin-top: 5px;
+          padding: 5px;
+          .product-energy__title {
+            font-size: map-get($font-size-medium, 1);
+            font-family: "estedad-700";
+          }
+          .product-energy__value {
+            width: 80%;
+            .fill-product__energy-value {
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .product-protein {
+          padding: 5px;
+          .product-protein__title {
+            font-size: map-get($font-size-medium, 1);
+            font-family: "estedad-700";
+          }
+          .product-protein__value {
+            width: 80%;
+            .fill-product__protein-value {
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+        .shop-card {
+          .sale {
+            width: 30%;
+            height: 30px;
+            font-size: map-get($font-size-medium, 1);
+            padding: 5px;
+            .plus {
+              margin-right: 5px;
+              font-size: map-get($font-size-medium, 1);
+            }
+            .add-product {
+              font-size: map-get($font-size-medium, 1);
+            }
+            .minus {
+              margin-left: 5px;
+              font-size: map-get($font-size-medium, 3);
+            }
+          }
+          .shop {
+            .shop-button {
+              margin-right: 40px;
+              font-family: "palatino-sans-700";
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  // Header
+  .main-section {
+    @include flex-row__space-around;
+    .right-section__container {
+      img {
+        width: 232px;
+        height: 49px;
+      }
+    }
+    .left-section__container {
+      @include flex-row__space-evenly;
+      .list-links__right {
+        .list-links__items {
+          @include display-inline__block;
+          .horizontal-list {
+            @include flex-row__flex-start;
+            .horizontal-list__right {
+              i {
+                width: 35px;
+                height: 35px;
+                font-size: map-get($font-size-medium, 1);
+              }
+            }
+            .horizontal-list__left {
+              a {
+                font-family: "aviny-700";
+                font-size: map-get($font-size-medium, 1);
+              }
+            }
+          }
+        }
+      }
+      .list-links__left {
+        @include flex-row__space-evenly;
+        .list-links {
+          .list-item {
+            @include display-inline__block;
+            i {
+              width: 35px;
+              height: 35px;
+              font-size: map-get($font-size-medium, 4);
+              margin: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Header
+
+  // navbar
+  .navbar {
+    .navbar-menu {
+      @include flex-row__space-between;
+      margin: 20px auto;
+      border-radius: 30px;
+      .navbar-menu__right {
+        .navbar-menu__right-items {
+          @include flex-row__flex-start;
+          li {
+            a {
+              font-family: "palatino-sans-700";
+              margin: 0 10px;
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+      }
+      .navbar-menu__left {
+        padding: 6px;
+        i,
+        span {
+          font-size: map-get($font-size-medium, 2);
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+  // End navbar
+
+  // Banner
+  .banner {
+    top: -43px;
+    .banner-container {
+      font-family: "azarmehr-700";
+      .banner-title {
+        font-size: map-get($font-size-medium, 3);
+      }
+      .banner-list {
+        margin-top: 0;
+        li {
+          a {
+            font-size: map-get($font-size-medium, 1);
+          }
+        }
+      }
+    }
+  }
+  // End Banner
+
+  // Main Body
+  .details-section {
+    margin-top: 30px;
+    .food-info__container {
+      @include flex-row__flex-start;
+      .product-detail-gallery {
+        width: 50%;
+        .large-image {
+          width: 60%;
+          white-space: nowrap;
+          overflow: hidden;
+          margin: 10px auto;
+          img {
+            width: 325px;
+            height: auto;
+            background-size: cover;
+          }
+        }
+        .small-image {
+          @include flex-row__center;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      .product-detail-info {
+        width: 50%;
+        .title {
+          @include flex-row__center;
+          width: 100%;
+          .food-details__title {
+            padding: 5px;
+            h4 {
+              font-family: "azarmehr-700";
+              font-size: map-get($font-size-medium, 4);
+            }
+          }
+          .badge {
+            font-size: map-get($font-size-medium, 4);
+            font-family: "aviny-700";
+            padding: 5px;
+            margin-right: 9px;
+          }
+        }
+        .food-details__content {
+          font-family: "estedad-700";
+          font-size: map-get($font-size-medium, 2);
+          margin-top: 0;
+        }
+        .details {
+          .price {
+            .price-list {
+              .li-price__list {
+                font-family: "estedad-700";
+                span,
+                del {
+                  margin: 3px;
+                }
+                del {
+                  font-size: map-get($font-size-medium, 3);
+                }
+                span {
+                  font-size: map-get($font-size-medium, 3);
+                }
+              }
+            }
+          }
+          .product-type {
+            margin-top: 5px;
+            margin-right: 5px;
+            .product-type__link {
+              padding: 5px;
+              font-size: map-get($font-size-medium, 2);
+            }
+          }
+        }
+        .product-energy {
+          margin-top: 10px;
+          padding: 10px;
+          .product-energy__title {
+            font-size: map-get($font-size-medium, 2);
+            font-family: "estedad-700";
+          }
+          .product-energy__value {
+            width: 80%;
+            .fill-product__energy-value {
+              font-size: map-get($font-size-medium, 2);
+            }
+          }
+        }
+        .product-protein {
+          padding: 10px;
+          .product-protein__title {
+            font-size: map-get($font-size-medium, 2);
+            font-family: "estedad-700";
+          }
+          .product-protein__value {
+            width: 80%;
+            .fill-product__protein-value {
+              font-size: map-get($font-size-medium, 2);
+            }
+          }
+        }
+        .shop-card {
+          .sale {
+            width: 35%;
+            height: 40px;
+            font-size: map-get($font-size-medium, 2);
+            padding: 10px;
+            .plus {
+              margin-right: 5px;
+              font-size: map-get($font-size-medium, 2);
+            }
+            .add-product {
+              font-size: map-get($font-size-medium, 2);
+            }
+            .minus {
+              margin-left: 5px;
+              font-size: map-get($font-size-medium, 3);
+            }
+          }
+          .shop {
+            .shop-button {
+              margin-right: 40px;
+              font-family: "palatino-sans-700";
+              font-size: map-get($font-size-medium, 2);
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 1200px) {
+  // Header
+  .main-section {
+    @include flex-row__space-around;
+    .right-section__container {
+      img {
+        width: 232px;
+        height: 49px;
+      }
+    }
+    .left-section__container {
+      @include flex-row__space-evenly;
+      .list-links__right {
+        .list-links__items {
+          @include display-inline__block;
+          .horizontal-list {
+            @include flex-row__flex-start;
+            .horizontal-list__right {
+              i {
+                width: 35px;
+                height: 35px;
+                font-size: map-get($font-size-medium, 3);
+                margin-left: 8px;
+              }
+            }
+            .horizontal-list__left {
+              a {
+                font-family: "aviny-700";
+                font-size: map-get($font-size-medium, 3);
+              }
+            }
+          }
+        }
+      }
+      .list-links__left {
+        @include flex-row__space-evenly;
+        .list-links {
+          .list-item {
+            @include display-inline__block;
+            i {
+              width: 35px;
+              height: 35px;
+              font-size: map-get($font-size-medium, 6);
+              margin: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Header
+
+  // navbar
+  .navbar {
+    .navbar-menu {
+      @include flex-row__space-between;
+      margin: 30px auto;
+      border-radius: 50px;
+      .navbar-menu__right {
+        .navbar-menu__right-items {
+          li {
+            a {
+              font-family: "palatino-sans-700";
+              margin: 0 15px;
+              font-size: map-get($font-size-medium, 1);
+            }
+          }
+        }
+      }
+      .navbar-menu__left {
+        padding: 6px;
+        i,
+        span {
+          font-size: map-get($font-size-medium, 4);
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+  // End navbar
+
+  // Banner
+  .banner {
+    top: -43px;
+    .banner-container {
+      font-family: "azarmehr-700";
+      .banner-title {
+        font-size: map-get($font-size-medium, 4);
+      }
+      .banner-list {
+        margin-top: 0;
+        li {
+          a {
+            font-size: map-get($font-size-medium, 2);
+          }
+        }
+      }
+    }
+  }
+  // End Banner
+
+  // Main Body
+  .details-section {
+    margin-top: 30px;
+    .food-info__container {
+      @include flex-row__flex-start;
+      .product-detail-gallery {
+        width: 50%;
+        .large-image {
+          width: 55%;
+          white-space: nowrap;
+          overflow: hidden;
+          margin: 10px auto;
+          img {
+            width: 400px;
+            height: auto;
+            background-size: cover;
+          }
+        }
+        .small-image {
+          @include flex-row__center;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      .product-detail-info {
+        width: 50%;
+        .title {
+          @include flex-row__center;
+          width: 100%;
+          .food-details__title {
+            padding: 5px;
+            h4 {
+              font-family: "azarmehr-700";
+              font-size: map-get($font-size-large, 2);
+            }
+          }
+          .badge {
+            font-size: map-get($font-size-medium, 6);
+            font-family: "aviny-700";
+            padding: 5px;
+            margin-right: 15px;
+          }
+        }
+        .food-details__content {
+          font-family: "estedad-700";
+          font-size: map-get($font-size-medium, 4);
+          margin-top: 0;
+        }
+        .details {
+          .price {
+            .price-list {
+              .li-price__list {
+                font-family: "estedad-700";
+                span,
+                del {
+                  margin: 7px;
+                }
+                del {
+                  font-size: map-get($font-size-large, 3);
+                }
+                span {
+                  font-size: map-get($font-size-large, 1);
+                }
+              }
+            }
+          }
+          .product-type {
+            margin-top: 5px;
+            margin-right: 5px;
+            .product-type__link {
+              padding: 5px;
+              font-size: map-get($font-size-medium, 4);
+            }
+          }
+        }
+        .product-energy {
+          margin-top: 10px;
+          padding: 10px;
+          .product-energy__title {
+            font-size: map-get($font-size-medium, 4);
+            font-family: "estedad-700";
+          }
+          .product-energy__value {
+            width: 80%;
+            .fill-product__energy-value {
+              font-size: map-get($font-size-medium, 4);
+            }
+          }
+        }
+        .product-protein {
+          padding: 10px;
+          .product-protein__title {
+            font-size: map-get($font-size-medium, 4);
+            font-family: "estedad-700";
+          }
+          .product-protein__value {
+            width: 80%;
+            .fill-product__protein-value {
+              font-size: map-get($font-size-medium, 4);
+            }
+          }
+        }
+        .shop-card {
+          .sale {
+            width: 35%;
+            height: 50px;
+            font-size: map-get($font-size-medium, 4);
+            padding: 10px;
+            .plus {
+              margin-right: 8px;
+              font-size: map-get($font-size-medium, 4);
+            }
+            .add-product {
+              font-size: map-get($font-size-medium, 4);
+            }
+            .minus {
+              margin-left: 8px;
+              font-size: map-get($font-size-medium, 6);
+            }
+          }
+          .shop {
+            .shop-button {
+              margin-right: 50px;
+              font-family: "palatino-sans-700";
+              font-size: map-get($font-size-medium, 6);
+            }
+          }
+        }
+      }
+    }
+  }
+  // End Main Body
+}

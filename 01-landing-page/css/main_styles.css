@@ -180,8 +180,7 @@ body {
     width: 151px;
     height: 80px;
     background-color: rgb(91, 218, 45);
-    -webkit-clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
-            clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
   }
   .main-body .image-main__body-section .food-menu .food-menu__gird-section .grid-box .grid-box__title p {
     margin: 40px 5px;
@@ -326,8 +325,7 @@ body {
     width: 190px;
     height: 90px;
     background-color: rgb(91, 218, 45);
-    -webkit-clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
-            clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
   }
   .main-body .image-main__body-section .food-menu .food-menu__gird-section .grid-box p {
     margin: 40px 5px;
@@ -470,8 +468,7 @@ body {
     width: 190px;
     height: 90px;
     background-color: rgb(91, 218, 45);
-    -webkit-clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
-            clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
   }
   .main-body .image-main__body-section .food-menu .food-menu__gird-section .grid-box p {
     margin: 40px 5px;
@@ -614,8 +611,7 @@ body {
     width: 190px;
     height: 90px;
     background-color: rgb(91, 218, 45);
-    -webkit-clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
-            clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
   }
   .main-body .image-main__body-section .food-menu .food-menu__gird-section .grid-box p {
     margin: 40px 5px;
@@ -758,8 +754,7 @@ body {
     width: 190px;
     height: 90px;
     background-color: rgb(91, 218, 45);
-    -webkit-clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
-            clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
   }
   .main-body .image-main__body-section .food-menu .food-menu__gird-section .grid-box p {
     margin: 40px 5px;
@@ -908,8 +903,7 @@ body {
     width: 209px;
     height: 100px;
     background-color: rgb(91, 218, 45);
-    -webkit-clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
-            clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
   }
   .main-body .image-main__body-section .food-menu .food-menu__gird-section .grid-box p {
     margin: 40px 5px;
@@ -1056,8 +1050,7 @@ body {
     width: 300px;
     height: 200px;
     background-color: rgb(91, 218, 45);
-    -webkit-clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
-            clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 80%);
   }
   .main-body .image-main__body-section .food-menu .food-menu__gird-section .grid-box p {
     margin: 50px 5px;

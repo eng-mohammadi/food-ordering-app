@@ -1,0 +1,1865 @@
+@font-face {
+  font-family: "aviny-700";
+  src: url(../fonts/farsi_fonts/aviny-700.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/aviny-700.ttf) format("truetype"), url(../fonts/farsi_fonts/aviny-700.woff) format("woff"), url(../fonts/farsi_fonts/aviny-700.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "azarmehr-700";
+  src: url(../fonts/farsi_fonts/azarmehr-700.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/azarmehr-700.ttf) format("truetype"), url(../fonts/farsi_fonts/azarmehr-700.woff) format("woff"), url(../fonts/farsi_fonts/azarmehr-700.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "palatinoSans-700";
+  src: url(../fonts/farsi_fonts/palatinoSans-700.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/palatinoSans-700.ttf) format("truetype"), url(../fonts/farsi_fonts/palatinoSans-700.woff) format("woff"), url(../fonts/farsi_fonts/palatinoSans-700.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "azarmehr-300";
+  src: url(../fonts/farsi_fonts/azarmehr-300.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/azarmehr-300.ttf) format("truetype"), url(../fonts/farsi_fonts/azarmehr-300.woff) format("woff"), url(../fonts/farsi_fonts/azarmehr-300.woff2) format("woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "estedad-300";
+  src: url(../fonts/farsi_fonts/estedad-300.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/estedad-300.ttf) format("truetype"), url(../fonts/farsi_fonts/estedad-300.woff) format("woff"), url(../fonts/farsi_fonts/estedad-300.woff2) format("woff2");
+  font-weight: 300;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+  background-color: #fbfbfb;
+}
+
+@media only screen and (max-width: 320px) {
+  .main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-section .right-section__container img {
+    width: 60px;
+    height: 49px;
+  }
+  .main-section .left-section__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__right i {
+    width: 25px;
+    height: 25px;
+    font-size: 0.5rem;
+    margin-left: 3px;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__left a {
+    font-family: "azarmehr-300";
+    font-size: 0.5rem;
+  }
+  .main-section .left-section__container .list-links__left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__left .list-links {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item i {
+    width: 25px;
+    height: 25px;
+    font-size: 0.7rem;
+    margin: 3px;
+  }
+  .navbar .navbar-menu {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    border-radius: 20px;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items li a {
+    font-family: "azarmehr-300";
+    margin: 0 3px;
+    font-size: 0.5rem;
+  }
+  .navbar .navbar-menu .navbar-menu__left {
+    padding: 3px;
+  }
+  .navbar .navbar-menu .navbar-menu__left i,
+  .navbar .navbar-menu .navbar-menu__left span {
+    font-size: 0.7rem;
+    margin: 0 3px;
+  }
+  .banner {
+    top: -43px;
+  }
+  .banner .banner-container {
+    font-family: "estedad-300";
+  }
+  .banner .banner-container .banner-title {
+    font-size: 0.9rem;
+  }
+  .banner .banner-container .banner-list {
+    margin-top: 0;
+  }
+  .banner .banner-container .banner-list li a {
+    font-size: 0.7rem;
+  }
+  .details-section {
+    margin-top: 10px;
+  }
+  .details-section .food-info__container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery {
+    width: 75%;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image {
+    width: 40%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image img {
+    width: 100px;
+    height: 100px;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image img {
+    width: 100px;
+    height: 100px;
+  }
+  .details-section .food-info__container .product-detail-info {
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .title {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title h4 {
+    font-family: "azarmehr-300";
+    font-size: 1.1rem;
+  }
+  .details-section .food-info__container .product-detail-info .title .badge {
+    font-size: 1.1rem;
+    font-family: "aviny-300";
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .food-details__content {
+    font-family: "estedad-300";
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list {
+    font-family: "estedad-300";
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span,
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    margin: 3px;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span {
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type .product-type__link {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy {
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__title {
+    font-size: 0.9rem;
+    font-family: "estedad-300";
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value {
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value .fill-product__energy-value {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__title {
+    font-size: 1rem;
+    font-family: "estedad-300";
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value {
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value .fill-product__protein-value {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale {
+    width: 35%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .plus {
+    margin-right: 5px;
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .add-product {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .minus {
+    margin-left: 5px;
+    font-size: 1.2rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .shop .shop-button {
+    margin-right: 20px;
+    font-family: "palatino-sans-300";
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-section .right-section__container img {
+    width: 75px;
+    height: 49px;
+  }
+  .main-section .left-section__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__right i {
+    width: 30px;
+    height: 30px;
+    font-size: 0.5rem;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__left a {
+    font-family: "azarmehr-300";
+    font-size: 0.5rem;
+  }
+  .main-section .left-section__container .list-links__left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__left .list-links {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item i {
+    width: 25px;
+    height: 25px;
+    font-size: 0.5rem;
+    margin: 3px;
+  }
+  .navbar .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    border-radius: 25px;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items li a {
+    font-family: "azarmehr-300";
+    margin: 0 4px;
+    font-size: 0.5rem;
+  }
+  .navbar .navbar-menu .navbar-menu__left {
+    padding: 4px;
+  }
+  .navbar .navbar-menu .navbar-menu__left i,
+  .navbar .navbar-menu .navbar-menu__left span {
+    font-size: 0.7rem;
+    margin: 0 4px;
+  }
+  .banner {
+    top: -43px;
+  }
+  .banner .banner-container {
+    font-family: "estedad-300";
+  }
+  .banner .banner-container .banner-title {
+    font-size: 0.9rem;
+  }
+  .banner .banner-container .banner-list {
+    margin-top: 0;
+  }
+  .banner .banner-container .banner-list li a {
+    font-size: 0.8rem;
+  }
+  .details-section {
+    margin-top: 10px;
+  }
+  .details-section .food-info__container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery {
+    width: 75%;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image {
+    width: 40%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image img {
+    width: 120px;
+    height: auto;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image img {
+    width: 100px;
+    height: 100px;
+  }
+  .details-section .food-info__container .product-detail-info {
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .title {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title h4 {
+    font-family: "azarmehr-300";
+    font-size: 1.1rem;
+  }
+  .details-section .food-info__container .product-detail-info .title .badge {
+    font-size: 1.1rem;
+    font-family: "aviny-300";
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .food-details__content {
+    font-family: "estedad-300";
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list {
+    font-family: "estedad-300";
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span,
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    margin: 3px;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span {
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type .product-type__link {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy {
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__title {
+    font-size: 0.9rem;
+    font-family: "estedad-300";
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value .fill-product__energy-value {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__title {
+    font-size: 1rem;
+    font-family: "estedad-300";
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value .fill-product__protein-value {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale {
+    width: 35%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .plus {
+    margin-right: 5px;
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .add-product {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .minus {
+    margin-left: 5px;
+    font-size: 1.2rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .shop .shop-button {
+    margin-right: 20px;
+    font-family: "palatino-sans-300";
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-section .right-section__container img {
+    width: 90px;
+    height: 49px;
+  }
+  .main-section .left-section__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__right i {
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__left a {
+    font-family: "azarmehr-300";
+    font-size: 0.7rem;
+  }
+  .main-section .left-section__container .list-links__left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item i {
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+    margin: 3px;
+  }
+  .navbar .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    border-radius: 25px;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items li a {
+    font-family: "azarmehr-300";
+    margin: 0 9px;
+    font-size: 0.7rem;
+  }
+  .navbar .navbar-menu .navbar-menu__left {
+    padding: 6px;
+  }
+  .navbar .navbar-menu .navbar-menu__left i,
+  .navbar .navbar-menu .navbar-menu__left span {
+    font-size: 0.8rem;
+    margin: 0 4px;
+  }
+  .banner {
+    top: -43px;
+  }
+  .banner .banner-container {
+    font-family: "estedad-300";
+  }
+  .banner .banner-container .banner-title {
+    font-size: 0.9rem;
+  }
+  .banner .banner-container .banner-list {
+    margin-top: 0;
+  }
+  .banner .banner-container .banner-list li a {
+    font-size: 0.8rem;
+  }
+  .details-section {
+    margin-top: 10px;
+  }
+  .details-section .food-info__container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) and (min-width: 480px) and (max-width: 521px) {
+  .details-section .food-info__container .product-detail-gallery .large-image {
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image img {
+    width: 220px;
+    height: auto;
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) and (min-width: 521px) and (max-width: 568px) {
+  .details-section .food-info__container .product-detail-gallery .large-image {
+    width: 55%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image img {
+    width: 220px;
+    height: auto;
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) and (min-width: 568px) and (max-width: 603px) {
+  .details-section .food-info__container .product-detail-gallery .large-image {
+    width: 58%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image img {
+    width: 250px;
+    height: auto;
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) and (min-width: 603px) and (max-width: 768px) {
+  .details-section .food-info__container .product-detail-gallery .large-image {
+    width: 49%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image img {
+    width: 270px;
+    height: auto;
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .details-section .food-info__container .product-detail-gallery .small-image {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image img {
+    width: 100px;
+    height: 100px;
+  }
+  .details-section .food-info__container .product-detail-info {
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .title {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title h4 {
+    font-family: "azarmehr-300";
+    font-size: 1.1rem;
+  }
+  .details-section .food-info__container .product-detail-info .title .badge {
+    font-size: 1.1rem;
+    font-family: "aviny-300";
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .food-details__content {
+    font-family: "estedad-300";
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list {
+    font-family: "estedad-300";
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span,
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    margin: 3px;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span {
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type .product-type__link {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy {
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__title {
+    font-size: 0.9rem;
+    font-family: "estedad-300";
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value .fill-product__energy-value {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__title {
+    font-size: 1rem;
+    font-family: "estedad-300";
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value .fill-product__protein-value {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale {
+    width: 35%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .plus {
+    margin-right: 5px;
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .add-product {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .minus {
+    margin-left: 5px;
+    font-size: 1.2rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .shop .shop-button {
+    margin-right: 25px;
+    font-family: "palatino-sans-300";
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 920px) {
+  .main-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-section .right-section__container img {
+    width: 150px;
+    height: 49px;
+  }
+  .main-section .left-section__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__right i {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__left a {
+    font-family: "azarmehr-300";
+    font-size: 0.9rem;
+  }
+  .main-section .left-section__container .list-links__left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item i {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    margin: 3px;
+  }
+  .navbar .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    border-radius: 25px;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items li a {
+    font-family: "azarmehr-300";
+    margin: 0 9px;
+    font-size: 0.9rem;
+  }
+  .navbar .navbar-menu .navbar-menu__left {
+    padding: 6px;
+  }
+  .navbar .navbar-menu .navbar-menu__left i,
+  .navbar .navbar-menu .navbar-menu__left span {
+    font-size: 1rem;
+    margin: 0 4px;
+  }
+  .banner {
+    top: -43px;
+  }
+  .banner .banner-container {
+    font-family: "estedad-300";
+  }
+  .banner .banner-container .banner-title {
+    font-size: 0.9rem;
+  }
+  .banner .banner-container .banner-list {
+    margin-top: 0;
+  }
+  .banner .banner-container .banner-list li a {
+    font-size: 0.8rem;
+  }
+  .details-section {
+    margin-top: 10px;
+  }
+  .details-section .food-info__container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image {
+    width: 49%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image img {
+    width: 330px;
+    height: auto;
+    background-size: cover;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image img {
+    width: 100px;
+    height: 100px;
+  }
+  .details-section .food-info__container .product-detail-info {
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title h4 {
+    font-family: "azarmehr-700";
+    font-size: 1.2rem;
+  }
+  .details-section .food-info__container .product-detail-info .title .badge {
+    font-size: 1.2rem;
+    font-family: "aviny-700";
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .food-details__content {
+    font-family: "estedad-700";
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list {
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span,
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    margin: 3px;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type .product-type__link {
+    padding: 5px;
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy {
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__title {
+    font-size: 1rem;
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value .fill-product__energy-value {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__title {
+    font-size: 1rem;
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value .fill-product__protein-value {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale {
+    width: 20%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .plus {
+    margin-right: 5px;
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .add-product {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .minus {
+    margin-left: 5px;
+    font-size: 1.2rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .shop .shop-button {
+    margin-right: 35px;
+    font-family: "palatino-sans-700";
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+  .main-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-section .right-section__container img {
+    width: 200px;
+    height: 49px;
+  }
+  .main-section .left-section__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__right i {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__left a {
+    font-family: "azarmehr-300";
+    font-size: 0.9rem;
+  }
+  .main-section .left-section__container .list-links__left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item i {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    margin: 3px;
+  }
+  .navbar .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    border-radius: 25px;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items li a {
+    font-family: "azarmehr-300";
+    margin: 0 9px;
+    font-size: 0.9rem;
+  }
+  .navbar .navbar-menu .navbar-menu__left {
+    padding: 6px;
+  }
+  .navbar .navbar-menu .navbar-menu__left i,
+  .navbar .navbar-menu .navbar-menu__left span {
+    font-size: 1rem;
+    margin: 0 4px;
+  }
+  .banner {
+    top: -43px;
+  }
+  .banner .banner-container {
+    font-family: "azarmehr-700";
+  }
+  .banner .banner-container .banner-title {
+    font-size: 1rem;
+  }
+  .banner .banner-container .banner-list {
+    margin-top: 0;
+  }
+  .banner .banner-container .banner-list li a {
+    font-size: 0.9rem;
+  }
+  .details-section {
+    margin-top: 20px;
+  }
+  .details-section .food-info__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery {
+    width: 50%;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image {
+    width: 62%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image img {
+    width: 288px;
+    height: auto;
+    background-size: cover;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image img {
+    width: 100px;
+    height: 100px;
+  }
+  .details-section .food-info__container .product-detail-info {
+    width: 50%;
+  }
+  .details-section .food-info__container .product-detail-info .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title h4 {
+    font-family: "azarmehr-700";
+    font-size: 1.2rem;
+  }
+  .details-section .food-info__container .product-detail-info .title .badge {
+    font-size: 1.2rem;
+    font-family: "aviny-700";
+    padding: 5px;
+    margin-right: 8px;
+  }
+  .details-section .food-info__container .product-detail-info .food-details__content {
+    font-family: "estedad-700";
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list {
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span,
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    margin: 3px;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    font-size: 1.1rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span {
+    font-size: 1.1rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type .product-type__link {
+    padding: 5px;
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy {
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__title {
+    font-size: 1rem;
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value .fill-product__energy-value {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__title {
+    font-size: 1rem;
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value .fill-product__protein-value {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale {
+    width: 30%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .plus {
+    margin-right: 5px;
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .add-product {
+    font-size: 1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .minus {
+    margin-left: 5px;
+    font-size: 1.2rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .shop .shop-button {
+    margin-right: 40px;
+    font-family: "palatino-sans-700";
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-section .right-section__container img {
+    width: 232px;
+    height: 49px;
+  }
+  .main-section .left-section__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__right i {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__left a {
+    font-family: "aviny-700";
+    font-size: 1rem;
+  }
+  .main-section .left-section__container .list-links__left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item i {
+    width: 35px;
+    height: 35px;
+    font-size: 1.3rem;
+    margin: 4px;
+  }
+  .navbar .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 30px;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items li a {
+    font-family: "palatino-sans-700";
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+  .navbar .navbar-menu .navbar-menu__left {
+    padding: 6px;
+  }
+  .navbar .navbar-menu .navbar-menu__left i,
+  .navbar .navbar-menu .navbar-menu__left span {
+    font-size: 1.1rem;
+    margin: 0 4px;
+  }
+  .banner {
+    top: -43px;
+  }
+  .banner .banner-container {
+    font-family: "azarmehr-700";
+  }
+  .banner .banner-container .banner-title {
+    font-size: 1.2rem;
+  }
+  .banner .banner-container .banner-list {
+    margin-top: 0;
+  }
+  .banner .banner-container .banner-list li a {
+    font-size: 1rem;
+  }
+  .details-section {
+    margin-top: 30px;
+  }
+  .details-section .food-info__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery {
+    width: 50%;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image {
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image img {
+    width: 325px;
+    height: auto;
+    background-size: cover;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image img {
+    width: 100px;
+    height: 100px;
+  }
+  .details-section .food-info__container .product-detail-info {
+    width: 50%;
+  }
+  .details-section .food-info__container .product-detail-info .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title h4 {
+    font-family: "azarmehr-700";
+    font-size: 1.3rem;
+  }
+  .details-section .food-info__container .product-detail-info .title .badge {
+    font-size: 1.3rem;
+    font-family: "aviny-700";
+    padding: 5px;
+    margin-right: 9px;
+  }
+  .details-section .food-info__container .product-detail-info .food-details__content {
+    font-family: "estedad-700";
+    font-size: 1.1rem;
+    margin-top: 0;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list {
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span,
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    margin: 3px;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    font-size: 1.2rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span {
+    font-size: 1.2rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type .product-type__link {
+    padding: 5px;
+    font-size: 1.1rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__title {
+    font-size: 1.1rem;
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value .fill-product__energy-value {
+    font-size: 1.1rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein {
+    padding: 10px;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__title {
+    font-size: 1.1rem;
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value .fill-product__protein-value {
+    font-size: 1.1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale {
+    width: 35%;
+    height: 40px;
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .plus {
+    margin-right: 5px;
+    font-size: 1.1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .add-product {
+    font-size: 1.1rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .minus {
+    margin-left: 5px;
+    font-size: 1.2rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .shop .shop-button {
+    margin-right: 40px;
+    font-family: "palatino-sans-700";
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-section .right-section__container img {
+    width: 232px;
+    height: 49px;
+  }
+  .main-section .left-section__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__right i {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    margin-left: 8px;
+  }
+  .main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__left a {
+    font-family: "aviny-700";
+    font-size: 1.2rem;
+  }
+  .main-section .left-section__container .list-links__left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+  }
+  .main-section .left-section__container .list-links__left .list-links .list-item i {
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem;
+    margin: 4px;
+  }
+  .navbar .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    border-radius: 50px;
+  }
+  .navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items li a {
+    font-family: "palatino-sans-700";
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+  .navbar .navbar-menu .navbar-menu__left {
+    padding: 6px;
+  }
+  .navbar .navbar-menu .navbar-menu__left i,
+  .navbar .navbar-menu .navbar-menu__left span {
+    font-size: 1.3rem;
+    margin: 0 4px;
+  }
+  .banner {
+    top: -43px;
+  }
+  .banner .banner-container {
+    font-family: "azarmehr-700";
+  }
+  .banner .banner-container .banner-title {
+    font-size: 1.3rem;
+  }
+  .banner .banner-container .banner-list {
+    margin-top: 0;
+  }
+  .banner .banner-container .banner-list li a {
+    font-size: 1.1rem;
+  }
+  .details-section {
+    margin-top: 30px;
+  }
+  .details-section .food-info__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery {
+    width: 50%;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image {
+    width: 55%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  .details-section .food-info__container .product-detail-gallery .large-image img {
+    width: 400px;
+    height: auto;
+    background-size: cover;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-section .food-info__container .product-detail-gallery .small-image img {
+    width: 100px;
+    height: 100px;
+  }
+  .details-section .food-info__container .product-detail-info {
+    width: 50%;
+  }
+  .details-section .food-info__container .product-detail-info .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title {
+    padding: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .title .food-details__title h4 {
+    font-family: "azarmehr-700";
+    font-size: 1.7rem;
+  }
+  .details-section .food-info__container .product-detail-info .title .badge {
+    font-size: 1.5rem;
+    font-family: "aviny-700";
+    padding: 5px;
+    margin-right: 15px;
+  }
+  .details-section .food-info__container .product-detail-info .food-details__content {
+    font-family: "estedad-700";
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list {
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span,
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    margin: 7px;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list del {
+    font-size: 1.8rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list span {
+    font-size: 1.6rem;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .details-section .food-info__container .product-detail-info .details .product-type .product-type__link {
+    padding: 5px;
+    font-size: 1.3rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__title {
+    font-size: 1.3rem;
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-energy .product-energy__value .fill-product__energy-value {
+    font-size: 1.3rem;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein {
+    padding: 10px;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__title {
+    font-size: 1.3rem;
+    font-family: "estedad-700";
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value {
+    width: 80%;
+  }
+  .details-section .food-info__container .product-detail-info .product-protein .product-protein__value .fill-product__protein-value {
+    font-size: 1.3rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale {
+    width: 35%;
+    height: 50px;
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .plus {
+    margin-right: 8px;
+    font-size: 1.3rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .add-product {
+    font-size: 1.3rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .sale .minus {
+    margin-left: 8px;
+    font-size: 1.5rem;
+  }
+  .details-section .food-info__container .product-detail-info .shop-card .shop .shop-button {
+    margin-right: 50px;
+    font-family: "palatino-sans-700";
+    font-size: 1.5rem;
+  }
+}
+.main-section {
+  width: 100%;
+}
+.main-section .left-section__container .list-links__right {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+}
+.main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__right i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #ccc;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+}
+.main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__left a {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+.main-section .left-section__container .list-links__right .list-links__items .horizontal-list .horizontal-list__left a:hover {
+  color: red;
+}
+.main-section .left-section__container .list-links__left .list-links .list-item i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #fff;
+}
+.main-section .left-section__container .list-links__left .list-links .list-item i:hover {
+  background-color: #333333;
+  color: #5eb0f4;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
+.navbar .navbar-menu {
+  width: 90%;
+  border: 1px solid #f16121;
+  background-color: #f16121;
+  position: relative;
+}
+.navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items li {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+}
+.navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items li #link {
+  padding: 5px;
+  border: 1px solid #f16121;
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+.navbar .navbar-menu .navbar-menu__right .navbar-menu__right-items li a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar .navbar-menu .navbar-menu__left a {
+  text-decoration: none;
+  color: #000;
+}
+.navbar .navbar-menu .navbar-menu__left a:hover {
+  color: #fff;
+}
+.navbar .navbar-menu .navbar-menu__left a span {
+  color: #fff;
+}
+
+.banner {
+  width: 100%;
+  height: 275px;
+  position: relative;
+  background-image: url("../images/food_images/home-slide-3-1920x800.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .banner-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  margin: 10px auto;
+  text-align: center;
+}
+.banner .banner-container .banner-title {
+  margin-top: 50px;
+  color: #fff;
+}
+.banner .banner-container .banner-list li {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+}
+.banner .banner-container .banner-list li a {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+.banner .banner-container .banner-list li a:hover {
+  color: red;
+}
+
+.details-section {
+  width: 100%;
+}
+.details-section .food-info__container {
+  width: 100%;
+}
+.details-section .food-info__container .product-detail-gallery .large-image {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.details-section .food-info__container .product-detail-gallery .large-image img {
+  border-radius: 15px;
+  margin: 10px;
+}
+.details-section .food-info__container .product-detail-gallery .small-image {
+  width: 100%;
+}
+.details-section .food-info__container .product-detail-gallery .small-image img {
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 7px 7px 7px #000;
+}
+.details-section .food-info__container .product-detail-info .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.details-section .food-info__container .product-detail-info .title .badge {
+  background-color: #f16121;
+  color: #fff;
+}
+.details-section .food-info__container .product-detail-info .food-details__content {
+  color: #a09595;
+}
+.details-section .food-info__container .product-detail-info .line-style {
+  width: 75%;
+  display: inline-block;
+  border: 1px solid #a09595;
+}
+.details-section .food-info__container .product-detail-info .details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.details-section .food-info__container .product-detail-info .details .price .price-list {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+}
+.details-section .food-info__container .product-detail-info .details .price .price-list .li-price__list {
+  color: #f16121;
+}
+.details-section .food-info__container .product-detail-info .details .product-type {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.details-section .food-info__container .product-detail-info .details .product-type .product-type__link {
+  margin: 5px;
+  border: 1px solid orange;
+  border-radius: 50%;
+  background-color: orange;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.details-section .food-info__container .product-detail-info .product-energy .product-energy__title {
+  color: #a09595;
+  margin: 0;
+}
+.details-section .food-info__container .product-detail-info .product-energy .product-energy__value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  text-align: left;
+}
+.details-section .food-info__container .product-detail-info .product-energy .product-energy__value .fill-product__energy-value {
+  height: 100%;
+  background-color: orange;
+  border-radius: 25px;
+  padding: 5px;
+  text-align: right;
+  color: #fff;
+}
+.details-section .food-info__container .product-detail-info .product-energy .product-energy__value span {
+  margin-left: 10px;
+}
+.details-section .food-info__container .product-detail-info .product-protein .product-protein__title {
+  color: #a09595;
+  margin: 0;
+}
+.details-section .food-info__container .product-detail-info .product-protein .product-protein__value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  text-align: left;
+}
+.details-section .food-info__container .product-detail-info .product-protein .product-protein__value .fill-product__protein-value {
+  height: 100%;
+  background-color: orange;
+  border-radius: 25px;
+  padding: 5px;
+  text-align: right;
+  color: #fff;
+}
+.details-section .food-info__container .product-detail-info .product-protein .product-protein__value span {
+  margin-left: 10px;
+}
+.details-section .food-info__container .product-detail-info .shop-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 25px;
+}
+.details-section .food-info__container .product-detail-info .shop-card .sale {
+  border-radius: 25px;
+  border: 1px solid #a09595;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.details-section .food-info__container .product-detail-info .shop-card .sale .add-product {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+.details-section .food-info__container .product-detail-info .shop-card .shop .shop-button {
+  width: 100%;
+  padding: 5px;
+  border-radius: 25px;
+  background-color: #f16121;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.details-section .food-info__container .product-detail-info .shop-card .shop .shop-button:hover {
+  background-color: #0e9ede;
+}/*# sourceMappingURL=food_details_styles.css.map */
