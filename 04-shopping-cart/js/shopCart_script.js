@@ -50,9 +50,8 @@ function addNumberProducts() {
   let shopCartsTitle = document.getElementById("shop-carts__title").innerText;
   shopCartsTitle = parseInt(shopCartsTitle.slice(1, -1));
   shopCartsTitle += window.localStorage.length;
-  document.getElementById(
-    "shop-carts__title"
-  ).innerText = `(${shopCartsTitle})`;
+  document.getElementById("shop-carts__title").innerText =
+    `(${shopCartsTitle})`;
 }
 // End of the function to add the number of products
 
@@ -80,7 +79,7 @@ function loadShopCarts() {
 
     let inputNumber = document.createElement("input");
     inputNumber.type = "number";
-    inputNumber.value = "1";
+    inputNumber.value = product.quantity;
     inputNumber.classList.add("input-number");
     inputNumber.setAttribute("min", "1");
     inputNumber.setAttribute("max", "20");
@@ -244,16 +243,14 @@ function removeProductFromShopCart() {
         document.getElementById("shop-carts__title").innerText;
       shopCartsTitle = parseInt(shopCartsTitle.slice(1, -1));
       shopCartsTitle--;
-      document.getElementById(
-        "shop-carts__title"
-      ).innerText = `(${shopCartsTitle})`;
+      document.getElementById("shop-carts__title").innerText =
+        `(${shopCartsTitle})`;
 
       let shopCartCount = document.getElementById("shop-cart__count").innerText;
       shopCartCount = parseInt(shopCartCount.slice(1, -1));
       shopCartCount--;
-      document.getElementById(
-        "shop-cart__count"
-      ).innerText = `(${shopCartCount})`;
+      document.getElementById("shop-cart__count").innerText =
+        `(${shopCartCount})`;
 
       for (let i = 0; i < tBody.length; i++) {
         let trs = tBody[i];

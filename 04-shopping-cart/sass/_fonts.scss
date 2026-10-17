@@ -12,11 +12,12 @@ $font-list2: (
 );
 
 $font-list3: (
-  "palatinoSans-700.eot",
-  "palatinoSans-700.ttf",
-  "palatinoSans-700.woff",
-  "palatinoSans-700.woff2"
+  "palatino-sans-700.eot",
+  "palatino-sans-700.ttf",
+  "palatino-sans-700.woff",
+  "palatino-sans-700.woff2"
 );
+
 $font-list4: (
   "azarmehr-300.eot",
   "azarmehr-300.ttf",
@@ -35,6 +36,7 @@ $font-list5: (
   $font-family: "";
   $format: "";
   $font-weight: null;
+
   @each $font in $font-list {
     @if (str-slice($font, -4) == ".eot") {
       $format: "embedded-opentype";
@@ -45,16 +47,24 @@ $font-list5: (
     } @else if (str-slice($font, -6) == ".woff2") {
       $format: "woff2";
     }
+
     $src: append(
       $src,
       url(../fonts/farsi_fonts/#{$font}) format($format),
       comma
     );
+
     $font-family: str-slice($font, 1, str-index($font, ".") - 1);
+
     $font-weight: unquote(
-      str-slice($font, str-index($font, "-") + 1, str-index($font, ".") - 1)
+      str-slice(
+        $font,
+        str-last-index($font, "-") + 1,
+        str-index($font, ".") - 1
+      )
     );
   }
+
   @font-face {
     font-family: $font-family;
     src: $src;

@@ -44,7 +44,7 @@ const jsonFoodData = `{
                       "product_name": "ژامبون مرغ تنوری",
                       "product_type":["normal"],
                       "product_price": [95000],
-                      "product_image": ["images/food_images/jhamboon_tanoori.jpg"],
+                      "product_image": ["images/food_images/jhamboon-tanoori.jpg"],
                       "product_content": [
                           "ژامبون مرغ",
                           "قارچ",
@@ -188,7 +188,7 @@ const jsonFoodData = `{
                       "product_name": "برگ",
                       "product_type":["normal"],
                       "product_price": [130000],
-                      "product_image": ["images/food_images/Leaf kebab.jpg"],
+                      "product_image": ["images/food_images/leaf-kebab.jpg"],
                       "product_content": [
                           "گوشت گوسفندی",
                           "نمک",
@@ -285,7 +285,7 @@ class GroupProducts extends FoodDiscount {
     productImage,
     productContent,
     productEnergy,
-    productProtein
+    productProtein,
   ) {
     super(discount);
     this.productName = productName;
@@ -339,7 +339,7 @@ class GroupProducts extends FoodDiscount {
             product.product_price.forEach((price) => {
               priceArray.push(price);
               calculationArray.push(
-                (priceArray.splice(0) * this.showDiscount()) / 100
+                (priceArray.splice(0) * this.showDiscount()) / 100,
               );
             });
           }
@@ -564,7 +564,7 @@ function createProductTypeInHTML() {
                     product.quantity = item.quantity;
                     window.localStorage.setItem(
                       "shopCarts",
-                      JSON.stringify(shopCarts)
+                      JSON.stringify(shopCarts),
                     );
                   }
                 });
@@ -572,16 +572,15 @@ function createProductTypeInHTML() {
                   shopCarts.push(shopCartsItems);
                   window.localStorage.setItem(
                     "shopCarts",
-                    JSON.stringify(shopCarts)
+                    JSON.stringify(shopCarts),
                   );
 
                   let shopCartCount =
                     document.getElementById("shop-cart").innerText;
                   shopCartCount = parseInt(shopCartCount.slice(1, -1));
                   shopCartCount++;
-                  document.getElementById(
-                    "shop-cart"
-                  ).innerText = `(${shopCartCount})`;
+                  document.getElementById("shop-cart").innerText =
+                    `(${shopCartCount})`;
                 }
               }
             });

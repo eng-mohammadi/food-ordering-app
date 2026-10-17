@@ -36,7 +36,7 @@ const jsonFoodData = `{
                   "product_id":1,
                   "product_name": "ژامبون مرغ تنوری",
                   "product_price": 165000,
-                  "product_image": "images/food_images/jhamboon_tanoori.jpg",
+                  "product_image": "images/food_images/jhamboon-tanoori.jpg",
                   "product_content": [
                       "ژامبون مرغ",
                       "قارچ",
@@ -92,7 +92,7 @@ const jsonFoodData = `{
               "product_id":5,                
               "product_name": "پیتزا فیله مرغ",
               "product_price": 165000,
-              "product_image": "images/food_images/chicken pizza.jpg",
+              "product_image": "images/food_images/chicken-pizza.jpg",
               "product_content": [
                   "فیله مرغ",
                   "قارچ",
@@ -134,7 +134,7 @@ const jsonFoodData = `{
               "product_id":8,                
               "product_name": "کوبیده",
               "product_price": 110000,
-              "product_image": "images/food_images/Shredded kebab.png",
+              "product_image": "images/food_images/shredded-kebab.png",
               "product_content": [
                   "گوشت چرخ کرده",
                   "پیاز",
@@ -145,7 +145,7 @@ const jsonFoodData = `{
               "product_id":9,                
               "product_name": "برگ",
               "product_price": 175,
-              "product_image": "images/food_images/Leaf kebab.jpg",
+              "product_image": "images/food_images/leaf-kebab.jpg",
               "product_content": [
                   "گوشت گوسفندی",
                   "نمک",
@@ -196,7 +196,7 @@ for (let value of urlParameters.values()) {
         foodTitle.setAttribute(
           "href",
           "food_details.html?" +
-            `group_id=${group.group_id}&product_id=${product.product_id}&product_name=${product.product_name}&group_title=${group.group_title}`
+            `group_id=${group.group_id}&product_id=${product.product_id}&product_name=${product.product_name}&group_title=${group.group_title}`,
         );
 
         foodTitleAndPrice.appendChild(foodTitle);
@@ -209,7 +209,7 @@ for (let value of urlParameters.values()) {
         foodTitle.innerText = `${product.product_name}`;
         foodPrice.innerText = ` قیمت : ${product.product_price} تومان`;
         foodContentTitle.innerText = `محتویات: ${product.product_content.join(
-          ", "
+          ", ",
         )}`;
       });
     }
