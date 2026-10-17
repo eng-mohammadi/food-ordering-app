@@ -1,0 +1,73 @@
+$font-list1: (
+  "aviny-700.eot",
+  "aviny-700.ttf",
+  "aviny-700.woff",
+  "aviny-700.woff2"
+);
+$font-list2: (
+  "azarmehr-700.eot",
+  "azarmehr-700.ttf",
+  "azarmehr-700.woff",
+  "azarmehr-700.woff2"
+);
+
+$font-list3: (
+  "palatino-sans-700.eot",
+  "palatino-sans-700.ttf",
+  "palatino-sans-700.woff",
+  "palatino-sans-700.woff2"
+);
+
+$font-list4: (
+  "azarmehr-300.eot",
+  "azarmehr-300.ttf",
+  "azarmehr-300.woff",
+  "azarmehr-300.woff2"
+);
+$font-list5: (
+  "estedad-300.eot",
+  "estedad-300.ttf",
+  "estedad-300.woff",
+  "estedad-300.woff2"
+);
+
+@mixin font-face($font-list) {
+  $src: null;
+  $font-family: "";
+  $format: "";
+  $font-weight: null;
+
+  @each $font in $font-list {
+    @if (str-slice($font, -4) == ".eot") {
+      $format: "embedded-opentype";
+    } @else if (str-slice($font, -4) == ".ttf") {
+      $format: "truetype";
+    } @else if (str-slice($font, -5) == ".woff") {
+      $format: "woff";
+    } @else if (str-slice($font, -6) == ".woff2") {
+      $format: "woff2";
+    }
+
+    $src: append(
+      $src,
+      url(../fonts/farsi_fonts/#{$font}) format($format),
+      comma
+    );
+
+    $font-family: str-slice($font, 1, str-index($font, ".") - 1);
+
+    $font-weight: unquote(
+      str-slice(
+        $font,
+        str-last-index($font, "-") + 1,
+        str-index($font, ".") - 1
+      )
+    );
+  }
+
+  @font-face {
+    font-family: $font-family;
+    src: $src;
+    font-weight: $font-weight;
+  }
+}

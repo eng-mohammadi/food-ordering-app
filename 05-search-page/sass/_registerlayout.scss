@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+  background-color: $body-bg-color;
+}
+
+@media only screen and (max-width: 320px) {
+  // Main Body
+  #register-main-box {
+    margin-top: 30px;
+  }
+
+  #popup-form {
+    &.active {
+      width: 250px;
+      h2 {
+        font-size: map-get($font-size-medium, 2);
+      }
+    }
+  }
+
+  .form-control {
+    font-size: map-get($font-size-small, 5);
+  }
+
+  .btn-popup {
+    &.active {
+      &::before {
+        font-size: map-get($font-size-medium, 1);
+      }
+    }
+    &::before {
+      font-size: map-get($font-size-medium, 1);
+    }
+  }
+
+  .summary-validation {
+    li {
+      font-size: map-get($font-size-small, 4);
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  // Main Body
+  #register-main-box {
+    margin-top: 30px;
+  }
+
+  #popup-form {
+    &.active {
+      width: 280px;
+      h2 {
+        font-size: map-get($font-size-medium, 2);
+      }
+    }
+  }
+
+  .form-control {
+    font-size: map-get($font-size-small, 5);
+  }
+
+  .btn-popup {
+    &.active {
+      &::before {
+        font-size: map-get($font-size-medium, 1);
+      }
+    }
+    &::before {
+      font-size: map-get($font-size-medium, 1);
+    }
+  }
+
+  .summary-validation {
+    li {
+      font-size: map-get($font-size-small, 4);
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  // Main Body
+  #register-main-box {
+    margin-top: 30px;
+  }
+
+  #popup-form {
+    &.active {
+      width: 320px;
+      h2 {
+        font-size: map-get($font-size-medium, 3);
+      }
+    }
+  }
+
+  .form-control {
+    font-size: map-get($font-size-medium, 1);
+  }
+
+  .btn-popup {
+    &.active {
+      &::before {
+        font-size: map-get($font-size-medium, 2);
+      }
+    }
+    &::before {
+      font-size: map-get($font-size-medium, 2);
+    }
+  }
+
+  .summary-validation {
+    li {
+      font-size: map-get($font-size-small, 4);
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 768px) and (max-width: 920px) {
+  // Main Body
+  #register-main-box {
+    margin-top: 30px;
+  }
+
+  #popup-form {
+    &.active {
+      width: 350px;
+      h2 {
+        font-size: map-get($font-size-medium, 4);
+      }
+    }
+  }
+
+  .form-control {
+    font-size: map-get($font-size-medium, 2);
+  }
+
+  .btn-popup {
+    &.active {
+      &::before {
+        font-size: map-get($font-size-medium, 3);
+      }
+    }
+    &::before {
+      font-size: map-get($font-size-medium, 3);
+    }
+  }
+
+  .summary-validation {
+    li {
+      font-size: map-get($font-size-small, 4);
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1024px) {
+  // Main Body
+  #register-main-box {
+    margin-top: 30px;
+  }
+
+  #popup-form {
+    &.active {
+      width: 380px;
+      h2 {
+        font-size: map-get($font-size-medium, 5);
+      }
+    }
+  }
+
+  .form-control {
+    font-size: map-get($font-size-medium, 3);
+  }
+
+  .btn-popup {
+    &.active {
+      &::before {
+        font-size: map-get($font-size-medium, 4);
+      }
+    }
+    &::before {
+      font-size: map-get($font-size-medium, 4);
+    }
+  }
+
+  .summary-validation {
+    li {
+      font-size: map-get($font-size-small, 5);
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  // Main Body
+  #register-main-box {
+    margin-top: 30px;
+  }
+
+  #register-form {
+    label {
+      font-size: map-get($font-size-medium, 3);
+    }
+  }
+
+  #popup-form {
+    &.active {
+      width: 450px;
+      h2 {
+        font-size: map-get($font-size-medium, 6);
+      }
+    }
+  }
+
+  .form-control {
+    font-size: map-get($font-size-medium, 4);
+  }
+
+  .btn-popup {
+    &.active {
+      &::before {
+        font-size: map-get($font-size-medium, 5);
+      }
+    }
+    &::before {
+      font-size: map-get($font-size-medium, 5);
+    }
+  }
+
+  .summary-validation {
+    li {
+      font-size: map-get($font-size-small, 5);
+    }
+  }
+  // End Main Body
+}
+
+@media only screen and (min-width: 1200px) {
+  // Main Body
+  #register-form {
+    label {
+      font-size: map-get($font-size-medium, 4);
+    }
+  }
+
+  #popup-form {
+    &.active {
+      width: 480px;
+      h2 {
+        font-size: map-get($font-size-large, 1);
+      }
+    }
+  }
+
+  .form-control {
+    font-size: map-get($font-size-medium, 5);
+  }
+
+  .btn-popup {
+    &.active {
+      &::before {
+        font-size: map-get($font-size-medium, 6);
+      }
+    }
+    &::before {
+      font-size: map-get($font-size-medium, 6);
+    }
+  }
+
+  .summary-validation {
+    li {
+      font-size: map-get($font-size-medium, 1);
+    }
+  }
+  // End Main Body
+}
