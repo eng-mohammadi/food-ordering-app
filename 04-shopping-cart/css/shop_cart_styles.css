@@ -11,7 +11,7 @@
 @font-face {
   font-family: "palatino-sans-700";
   src: url(../fonts/farsi_fonts/palatino-sans-700.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/palatino-sans-700.ttf) format("truetype"), url(../fonts/farsi_fonts/palatino-sans-700.woff) format("woff"), url(../fonts/farsi_fonts/palatino-sans-700.woff2) format("woff2");
-  font-weight: sans-700;
+  font-weight: 700;
 }
 @font-face {
   font-family: "azarmehr-300";
@@ -120,7 +120,7 @@ body {
     overflow: auto;
   }
   .shop-carts .shop-carts__container .shop-carts__table .table {
-    font-family: "palatinoSans-300";
+    font-family: "palatino-sans-700";
     font-size: 0.7rem;
   }
   .table tr td .td-img {
@@ -238,7 +238,7 @@ body {
     overflow: auto;
   }
   .shop-carts .shop-carts__container .shop-carts__table .table {
-    font-family: "palatinoSans-300";
+    font-family: "palatino-sans-700";
     font-size: 0.7rem;
   }
   .table tr td .td-img {
@@ -354,7 +354,7 @@ body {
     overflow: auto;
   }
   .shop-carts .shop-carts__container .shop-carts__table .table {
-    font-family: "palatinoSans-300";
+    font-family: "palatino-sans-700";
     font-size: 0.9rem;
   }
   .table tr td .td-img {
@@ -467,7 +467,7 @@ body {
     font-size: 1.1rem;
   }
   .shop-carts .shop-carts__container .shop-carts__table .table {
-    font-family: "palatinoSans-300";
+    font-family: "palatino-sans-700";
     font-size: 1rem;
   }
   .table tr td .td-img {
@@ -580,7 +580,7 @@ body {
     font-size: 1.3rem;
   }
   .shop-carts .shop-carts__container .shop-carts__table .table {
-    font-family: "palatinoSans-300";
+    font-family: "palatino-sans-700";
     font-size: 1.2rem;
   }
   .table tr td .td-img {
@@ -699,7 +699,7 @@ body {
     font-size: 1.6rem;
   }
   .shop-carts .shop-carts__container .shop-carts__table .table {
-    font-family: "palatinoSans-700";
+    font-family: "palatino-sans-700";
     font-size: 1.4rem;
   }
   .table tr td .td-img {
@@ -814,7 +814,7 @@ body {
     font-size: 1.6rem;
   }
   .shop-carts .shop-carts__container .shop-carts__table .table {
-    font-family: "palatinoSans-700";
+    font-family: "palatino-sans-700";
     font-size: 1.7rem;
   }
   .table tr td .td-img {

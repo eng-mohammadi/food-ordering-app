@@ -1,3 +1,13 @@
+@function str-last-index($string, $substring) {
+  $index: null;
+  @for $i from 1 through str-length($string) {
+    @if str-slice($string, $i, $i + str-length($substring) - 1) == $substring {
+      $index: $i;
+    }
+  }
+  @return $index;
+}
+
 $font-list1: (
   "aviny-700.eot",
   "aviny-700.ttf",

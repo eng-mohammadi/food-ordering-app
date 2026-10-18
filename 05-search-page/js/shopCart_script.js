@@ -277,17 +277,3 @@ function sum(...numbers) {
 // End of the definition of the sum function
 
 // ---------------------------------------------------------------------------------------------------
-
-// Definition of the back to menu button
-document
-  .getElementById("back-to-menu")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-
-    const previousMenuUrl = localStorage.getItem("previousMenuUrl");
-
-    window.location.href = previousMenuUrl || "./menu_page.html";
-  });
-// End of the definition of the back to menu button
-
-// ---------------------------------------------------------------------------------------------------

@@ -11,7 +11,7 @@
 @font-face {
   font-family: "palatino-sans-700";
   src: url(../fonts/farsi_fonts/palatino-sans-700.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/palatino-sans-700.ttf) format("truetype"), url(../fonts/farsi_fonts/palatino-sans-700.woff) format("woff"), url(../fonts/farsi_fonts/palatino-sans-700.woff2) format("woff2");
-  font-weight: sans-700;
+  font-weight: 700;
 }
 @font-face {
   font-family: "azarmehr-300";
@@ -251,7 +251,7 @@ body {
   }
   .details-section .food-info__container .product-detail-info .shop-card .shop .shop-button {
     margin-right: 20px;
-    font-family: "palatino-sans-300";
+    font-family: "palatino-sans-700";
     font-size: 1rem;
   }
 }
@@ -470,7 +470,7 @@ body {
   }
   .details-section .food-info__container .product-detail-info .shop-card .shop .shop-button {
     margin-right: 20px;
-    font-family: "palatino-sans-300";
+    font-family: "palatino-sans-700";
     font-size: 1rem;
   }
 }
@@ -731,7 +731,7 @@ body {
   }
   .details-section .food-info__container .product-detail-info .shop-card .shop .shop-button {
     margin-right: 25px;
-    font-family: "palatino-sans-300";
+    font-family: "palatino-sans-700";
     font-size: 1rem;
   }
 }
