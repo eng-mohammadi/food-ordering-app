@@ -1,0 +1,45 @@
+@import "_fonts";
+
+@include font-face($font-list1);
+@include font-face($font-list2);
+@include font-face($font-list3);
+@include font-face($font-list4);
+@include font-face($font-list5);
+
+$font-size-small: (
+  1: 0.5rem,
+  2: 0.62rem,
+  3: 0.7rem,
+  4: 0.8rem,
+  5: 0.9rem,
+);
+
+$font-size-medium: (
+  1: 1rem,
+  2: 1.1rem,
+  3: 1.2rem,
+  4: 1.3rem,
+  5: 1.4rem,
+  6: 1.5rem,
+);
+
+$font-size-large: (
+  1: 1.6rem,
+  2: 1.7rem,
+  3: 1.8rem,
+  4: 1.9rem,
+  5: 2rem,
+  6: 2.5rem,
+  7: 4rem,
+);
+
+$white-color: #fff;
+$black-color: #000;
+$navbar-menu__color: #f16121;
+$body-bg-color: #fbfbfb;
+$border-color: #ccc;
+$gray-color: #a09595;
+$blue-color: #5eb0f4;
+$blue-color__darken: #2284ce;
+$background-button__color: #199b0b;
+$background-green__color: rgb(91, 218, 45);

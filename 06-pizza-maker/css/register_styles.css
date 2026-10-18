@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "aviny-700";
+  src: url(../fonts/farsi_fonts/aviny-700.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/aviny-700.ttf) format("truetype"), url(../fonts/farsi_fonts/aviny-700.woff) format("woff"), url(../fonts/farsi_fonts/aviny-700.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "azarmehr-700";
+  src: url(../fonts/farsi_fonts/azarmehr-700.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/azarmehr-700.ttf) format("truetype"), url(../fonts/farsi_fonts/azarmehr-700.woff) format("woff"), url(../fonts/farsi_fonts/azarmehr-700.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "palatino-sans-700";
+  src: url(../fonts/farsi_fonts/palatino-sans-700.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/palatino-sans-700.ttf) format("truetype"), url(../fonts/farsi_fonts/palatino-sans-700.woff) format("woff"), url(../fonts/farsi_fonts/palatino-sans-700.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "azarmehr-300";
+  src: url(../fonts/farsi_fonts/azarmehr-300.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/azarmehr-300.ttf) format("truetype"), url(../fonts/farsi_fonts/azarmehr-300.woff) format("woff"), url(../fonts/farsi_fonts/azarmehr-300.woff2) format("woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "estedad-300";
+  src: url(../fonts/farsi_fonts/estedad-300.eot) format("embedded-opentype"), url(../fonts/farsi_fonts/estedad-300.ttf) format("truetype"), url(../fonts/farsi_fonts/estedad-300.woff) format("woff"), url(../fonts/farsi_fonts/estedad-300.woff2) format("woff2");
+  font-weight: 300;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+  background-color: #fbfbfb;
+}
+
+#register-main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#popup-form {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popup-form.active {
+  width: 450px;
+  height: 500px;
+}
+
+#register-form {
+  width: 90%;
+  visibility: hidden;
+}
+#register-form.active {
+  visibility: visible;
+}
+
+.btn-popup {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  bottom: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-popup.active {
+  bottom: -75px;
+}
+.btn-popup.active::before {
+  content: "+";
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.btn-popup::before {
+  content: "×";
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.form-control {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #a1a1a1;
+  margin: 5px 0 20px;
+  padding: 0px 20px;
+  font-size: 18px;
+}
+
+#register-form h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+.summary-validation {
+  margin-top: 0;
+}
+.summary-validation li {
+  font-size: 1rem;
+  color: red;
+}/*# sourceMappingURL=register_styles.css.map */

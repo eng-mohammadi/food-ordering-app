@@ -1,0 +1,194 @@
+@import "_generals";
+@import "_components";
+@import "_layouts";
+
+// Header
+.main-section {
+  width: 100%;
+  .left-section__container {
+    .list-links__right {
+      @include display-inline__block;
+      .list-links__items {
+        .horizontal-list {
+          .horizontal-list__right {
+            i {
+              @include display-inline__flex;
+              border: 5px solid $border-color;
+              border-radius: 50%;
+              background-color: $black-color;
+              color: $white-color;
+            }
+          }
+          .horizontal-list__left {
+            a {
+              @include display-inline__block;
+              color: $black-color;
+              &:hover {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+    .list-links__left {
+      .list-links {
+        .list-item {
+          i {
+            @include display-inline__flex;
+            border: 2px solid $border-color;
+            border-radius: 5px;
+            background-color: $border-color;
+            color: $white-color;
+            &:hover {
+              background-color: invert($border-color);
+              color: $blue-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Header
+
+// navbar Menu
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  .navbar-menu {
+    width: 90%;
+    border: 1px solid $navbar-menu__color;
+    background-color: $navbar-menu__color;
+    position: relative;
+    .navbar-menu__right {
+      .navbar-menu__right-items {
+        li {
+          @include display-inline__block;
+          #link {
+            padding: 5px;
+            border: 1px solid $navbar-menu__color;
+            background-color: hsla(0, 0%, 100%, 0.3);
+          }
+          a {
+            color: $white-color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .navbar-menu__left {
+      a {
+        text-decoration: none;
+        color: $black-color;
+        &:hover {
+          color: $white-color;
+        }
+        span {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+// End navbar Menu
+
+// Main Body
+.pizza-making__title {
+  font-family: "aviny-700";
+  text-align: center;
+  color: $background-green__color;
+}
+.pizza-making__container {
+  width: 90%;
+  margin: 0 auto;
+  @include flex-row__center;
+  gap: 10px;
+  .calc-box {
+    width: 15%;
+    height: 480px;
+    background-color: #f2f8f6;
+    @include flex-column__center;
+    border: 2px solid $border-color;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    .calc-item {
+      text-align: center;
+      .calc-item__content {
+        width: 140px;
+        height: 150px;
+        margin: 20px;
+        @include flex-column__center;
+        border: 2px solid $border-color;
+        border-radius: 50%;
+        color: $gray-color;
+        font-family: "azarmehr-300";
+        box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+        span {
+          color: red;
+        }
+      }
+    }
+  }
+  .main-box {
+    width: 60%;
+    height: 480px;
+    border: 2px solid $border-color;
+    @include flex-row__center;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    .pizza-dough {
+      background: url("../images/food-items/Pizza-Dough.png");
+      background-position: center center;
+      background-size: cover;
+      width: 440px;
+      height: 440px;
+      border-radius: 50%;
+      position: relative;
+    }
+  }
+  .item-box {
+    width: 15%;
+    height: 480px;
+    background-color: #f2f8f6;
+    @include flex-column__center;
+    border: 2px solid $border-color;
+    gap: 10px;
+    .image-box {
+      width: 60px;
+      height: 60px;
+      border: 2px solid $border-color;
+      text-align: center;
+      overflow: hidden;
+      box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+      img {
+        width: 57px;
+        height: 57px;
+        border-style: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.animation-button {
+  margin: 40px auto;
+  text-align: center;
+  .btn {
+    width: 60px;
+    height: 60px;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    background-color: $blue-color__darken;
+    padding: 10px;
+    font-size: map-get($font-size-medium, 3);
+    font-family: "azarmehr-700";
+    box-shadow: 5px 5px 8px #000;
+    &:hover {
+      cursor: pointer;
+      background-color: darken($blue-color, 40%);
+      color: $white-color;
+    }
+  }
+}
+// End Main Body

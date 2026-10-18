@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="این سایت برای سفارش آنلاین غذا و ارسال از طریق پیک می باشد."
+    />
+    <meta
+      name="keywords"
+      content="سفارش غذا، سفارش آنلاین، ارسال غذا، food delivery, online shop, food"
+    />
+    <meta name="author" content="Reza Mohammadi" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="./images/favicons/favicon.1.png" sizes="16x16" />
+    <link rel="icon" href="./images/favicons/favicon.2.png" sizes="32x32" />
+    <link rel="icon" href="./images/favicons/favicon.3.png" sizes="48x48" />
+    <link rel="icon" href="./images/favicons/favicon.4.png" sizes="64x64" />
+    <link rel="stylesheet" href="./css/food_details_styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3e0182d512.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>منوی غذا(جزئیات)</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <section class="main-section">
+        <section class="right-section__container">
+          <img
+            src="./images/food_images/brand-232x49.png "
+            alt="food delivery"
+          />
+        </section>
+        <section class="left-section__container">
+          <ul class="list-links__right">
+            <li class="list-links__items">
+              <section class="horizontal-list">
+                <section class="horizontal-list__right">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </section>
+                <section class="horizontal-list__left">
+                  <a href="#">ملایر، خیابان شهدا<br />مجتمع صدف، طبقه 3</a>
+                </section>
+              </section>
+            </li>
+            <li class="list-links__items">
+              <section class="horizontal-list">
+                <section class="horizontal-list__right">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </section>
+                <section class="horizontal-list__left">
+                  <a href="#">
+                    09143265789<br />
+                    شنبه تا پنج شنبه: 8 صبح-10 شب</a
+                  >
+                </section>
+              </section>
+            </li>
+          </ul>
+          <section class="list-links__left">
+            <ul class="list-links">
+              <li class="list-item">
+                <a href="#" title="Instagram"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="list-item">
+                <a href="#" title="Facebook"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="list-item">
+                <a href="#" title="Twitter"
+                  ><i class="fa fa-twitter" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="list-item">
+                <a href="#" title="LinkedIn"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </header>
+    <!-- End Header -->
+    <!-- Navbar Menu -->
+    <nav class="navbar" id="navbar">
+      <section class="navbar-menu" id="navbar-menu">
+        <section class="navbar-menu__right">
+          <ul class="navbar-menu__right-items">
+            <li><a href="./index.html" id="link">خانه</a></li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="./menu_page.html">منو</a></li>
+            <li><a href="./search_page.html">جستجو</a></li>
+            <li><a href="#">صفحات</a></li>
+            <li><a href="#">گالری</a></li>
+            <li><a href="./pizza_making.html"> تهیه پیتزا</a></li>
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#">اخبار</a></li>
+          </ul>
+        </section>
+        <section class="navbar-menu__left">
+          <a href="./shop_cart.html"
+            ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+            ><span id="shop-cart__count">(0)</span></a
+          >
+        </section>
+      </section>
+    </nav>
+    <!-- End Navbar Menu -->
+    <!-- Banner -->
+    <section class="banner">
+      <section class="banner-container">
+        <h1 class="banner-title" id="banner-title">&#10145;</h1>
+        <ul class="banner-list">
+          <li>
+            <a href="./index.html">خانه &nbsp;&nbsp;&nbsp;&#8592;</a>
+          </li>
+          <li>
+            <a href="./menu_page.html">منو &nbsp;&nbsp;&nbsp;&#8592;</a>
+          </li>
+          <li><a href="#" id="title-link"></a></li>
+        </ul>
+      </section>
+    </section>
+    <!-- End Banner -->
+    <!-- Main Body -->
+    <main role="main">
+      <section class="details-section">
+        <div class="food-info__container">
+          <div class="product-detail-gallery">
+            <div class="large-image" id="large-image"></div>
+            <div class="small-image" id="small-image"></div>
+          </div>
+          <div class="product-detail-info">
+            <div class="title">
+              <div class="food-details__title" id="food-details__title"></div>
+              <div class="badge">
+                <span>خوشمزه</span>
+              </div>
+            </div>
+            <p id="food-details__content" class="food-details__content"></p>
+            <hr class="line-style" />
+            <div class="details">
+              <div class="price">
+                <ul id="price-list" class="price-list"></ul>
+              </div>
+              <div class="product-type" id="product-type"></div>
+            </div>
+            <div class="product-energy">
+              <p class="product-energy__title">ارزش انرژی</p>
+              <div class="product-energy__value">
+                <div class="fill-product__energy-value" data-energy=""></div>
+                <span>500 کیلوکالری</span>
+              </div>
+            </div>
+            <div class="product-protein">
+              <p class="product-protein__title">پروتئین ها</p>
+              <div class="product-protein__value">
+                <div class="fill-product__protein-value" data-protein=""></div>
+                <span>200 گرم</span>
+              </div>
+            </div>
+            <div class="shop-card">
+              <div class="sale">
+                <span class="plus" id="plus">+</span>
+                <input
+                  type="number"
+                  id="number"
+                  min="1"
+                  max="20"
+                  value="1"
+                  class="add-product"
+                />
+                <span class="minus" id="minus">-</span>
+              </div>
+              <div class="shop">
+                <button type="button" class="shop-button">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End Main Body -->
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
+    <script src="./js/details_script.js"></script>
+  </body>
+</html>
