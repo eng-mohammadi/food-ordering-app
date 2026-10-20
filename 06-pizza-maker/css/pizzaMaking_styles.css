@@ -1216,7 +1216,7 @@ body {
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .pizza-making__container .main-box .pizza-dough {
-  background: url("../images/food-items/Pizza-Dough.png");
+  background: url("../images/food-items/pizza-dough.png");
   background-position: center center;
   background-size: cover;
   width: 440px;
